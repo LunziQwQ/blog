@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "KylinJiang's blog"
 theme = "solar-theme-hugo"
 paginate = 5
+publishDir = "docs"
 
 pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
 copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
