@@ -1,4 +1,4 @@
-baseURL = "http://www.lunzi.space/"
+baseURL = "https://www.lunzi.space/"
 languageCode = "en-us"
 title = "KylinJiang's blog"
 theme = "solar-theme-hugo"
