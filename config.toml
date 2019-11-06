@@ -14,5 +14,5 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
 
 [menu]
   [[menu.main]]
-    name = "Feed"
-    url = "/index.xml"
+    name = "about"
+    url = "about/index.html"
