@@ -1,51 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<meta name="generator" content="Hugo 0.58.2" />
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		
-			<link href="/index.xml" rel="alternate" type="application/rss+xml" title="KylinJiang&#39;s blog" />
-			<link href="/index.xml" rel="feed" type="application/rss+xml" title="KylinJiang&#39;s blog" />
-		
-
-		<title>KylinJiang&#39;s blog</title>
-
-		
-		<link rel="stylesheet" href="http://www.lunzi.space/css/colors-preference.min.a65e4173e6288241b66a095ab4a0d5718d726f5c8d5f0722d9bd283ead128a85.css">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-	</head>
-	<body>
-		<header id="header">
-			<h1><a href="http://www.lunzi.space/">KylinJiang&#39;s blog</a></h1>
-			<p>This what i live for</p>
-		</header>
-
-		<div id="page">
-			<div id="sidebar">
-				<nav>
-	
-		<ul class="nav">
-			
-				<li><a href="/index.xml"><span>Feed</span></a></li>
-			
-		</ul>
-	
-</nav>
-
-			</div>
-
-			<div id="content">
-				
-	
-		<article class="post">
-			<h1><a href="http://www.lunzi.space/post/start_blog/">Start_blog</a> </h1>
-
-			<div class="post-content">
-				<p>博客伊始 听说所有写博客的人都有四个阶段：
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on KylinJiang&#39;s blog</title>
+    <link>http://www.lunzi.space/post/</link>
+    <description>Recent content in Posts on KylinJiang&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
+    <lastBuildDate>Wed, 06 Nov 2019 01:17:49 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lunzi.space/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Start_blog</title>
+      <link>http://www.lunzi.space/post/start_blog/</link>
+      <pubDate>Wed, 06 Nov 2019 01:17:49 +0800</pubDate>
+      
+      <guid>http://www.lunzi.space/post/start_blog/</guid>
+      <description>博客伊始 听说所有写博客的人都有四个阶段：
  折腾域名+云服务器 自制blog系统 折腾现有blog系统 回归内容，静态blog。  我也不例外，兜兜转转，还是屈服于较为昂贵的服务器费用与需要续费的不稳定性，博客嘛，归根结底还是内容至上的。
 说起来这已经是第三版blog了，第一版自己写的前段，年少轻狂红袖添香。第二版使用了ghost博客系统，迫于羞耻没有继承原内容。然后开始用心的技术总结与输出，我也凭借着它得到了面试官的赏识，进入了一家心仪的公司。步入工作后的生活节奏的确与上学时有较大的不同，规律的作息与每日的工作让我在输出上怠惰了许久，直到自己的云服务器被回收，才想起这码事情。
 说来可惜，上一版的博客内容备份还是丢了，数万字的图文讲解就此消失，还是有些心痛的。上一版的第一篇文章也叫做博客伊始，讲述了对生活的愿景以及写作的态度，末尾祝我自己还能这般享受生活，两年过去我想我还算是做到了。
@@ -57,38 +30,8 @@
 生活还是有趣的，国庆节发了年终奖，手头殷实的我租车出游了两天，沉浸在了驾驶的喜悦中。开始研究车型，四处试驾，逢周末便想租车然后趴在方向盘上，想跑赛道想跑山，一颗买车的心也开始蠢蠢欲动。
 技术还是有趣的，工作于科研氛围的公司中，最不缺乏的就是探索方向。感兴趣于量子化学，独自开发分布式任务调度系统，甚至捧起编译原理开始思考如何优雅的实现结构化语言的解析器与检查器，thinking always make me happy。
 到了2019的尾巴，我过得还算不错，还需要注意多静下心来阅读，抽时间健身，捡起or重建一些爱好。
-祝我还能这般享受生活。 </p>
-			</div>
-
-			<p class="meta">Posted on <span class="postdate">06. November 2019</span></p>
-		</article>
-	
-		<article class="post">
-			<h1><a href="http://www.lunzi.space/about/">About</a> </h1>
-
-			<div class="post-content">
-				<p>Hi 这里是轮子 来自中原古都，望安魂于广深
-热爱创造，coding。遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下 </p>
-			</div>
-
-			<p class="meta">Posted on <span class="postdate">06. November 2019</span></p>
-		</article>
-	
-
-	
-
-
-			</div>
-
-			<footer id="footer">
-				<p class="copyright">
-					
-						Copyright © 2019 KylinJiang. All Rights Reserve
-					
-				</p>
-			</footer>
-		</div>
-
-		
-	</body>
-</html>
+祝我还能这般享受生活。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,11 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.lunzi.space/categories/</loc>
+    <loc>http://www.lunzi.space/</loc>
+    <lastmod>2019-11-06T01:17:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lunzi.space/</loc>
+    <loc>http://www.lunzi.space/post/</loc>
+    <lastmod>2019-11-06T01:17:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lunzi.space/post/start_blog/</loc>
+    <lastmod>2019-11-06T01:17:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lunzi.space/about/</loc>
+    <lastmod>2019-11-06T01:17:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lunzi.space/categories/</loc>
   </url>
   
   <url>
