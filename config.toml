@@ -16,3 +16,7 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
   [[menu.main]]
     name = "about"
     url = "/about/index.html"
+  [[menu.main]]
+    name = "game of life demo"
+    url = "https://lifegame.lunzi.space/"
+
