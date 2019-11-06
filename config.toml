@@ -15,4 +15,4 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
 [menu]
   [[menu.main]]
     name = "about"
-    url = "about/index.html"
+    url = "/about/index.html"
