@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KylinJiang&#39;s blog</title>
-    <link>http://www.lunzi.space/</link>
+    <link>https://www.lunzi.space/</link>
     <description>Recent content on KylinJiang&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
     <lastBuildDate>Wed, 06 Nov 2019 01:17:49 +0800</lastBuildDate>
     
-	<atom:link href="http://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Start_blog</title>
-      <link>http://www.lunzi.space/post/start_blog/</link>
+      <link>https://www.lunzi.space/post/start_blog/</link>
       <pubDate>Wed, 06 Nov 2019 01:17:49 +0800</pubDate>
       
-      <guid>http://www.lunzi.space/post/start_blog/</guid>
+      <guid>https://www.lunzi.space/post/start_blog/</guid>
       <description>&lt;h1 id=&#34;博客伊始&#34;&gt;博客伊始&lt;/h1&gt;
 
 &lt;p&gt;听说所有写博客的人都有四个阶段：&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>About</title>
-      <link>http://www.lunzi.space/about/</link>
+      <link>https://www.lunzi.space/about/</link>
       <pubDate>Wed, 06 Nov 2019 01:17:09 +0800</pubDate>
       
-      <guid>http://www.lunzi.space/about/</guid>
+      <guid>https://www.lunzi.space/about/</guid>
       <description>Hi 这里是轮子 来自中原古都，望安魂于广深
 热爱创造，coding。遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下</description>
     </item>
