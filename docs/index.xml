@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
-    <lastBuildDate>Wed, 06 Nov 2019 01:17:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 11:31:25 +0800</lastBuildDate>
     
 	<atom:link href="https://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>计算镜像的优化</title>
+      <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
+      <pubDate>Wed, 08 Jan 2020 11:31:25 +0800</pubDate>
+      
+      <guid>https://www.lunzi.space/post/optimize_computing_docker_image/</guid>
+      <description>&lt;h1 id=&#34;前因&#34;&gt;前因&lt;/h1&gt;
+
+&lt;p&gt;由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>博客伊始</title>
