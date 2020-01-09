@@ -14,9 +14,9 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
 
 [menu]
   [[menu.main]]
-    name = "about"
+    name = "AboutMe"
     url = "/about/index.html"
   [[menu.main]]
-    name = "lifegame"
+    name = "LifeGameDemo"
     url = "https://lifegame.lunzi.space/"
 

@@ -11,7 +11,7 @@ date: 2019-11-06T01:17:09+08:00
 
 热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），工作后却屈服于时间苟且打着王者（段位还不高…
 
-Work: 现就职于[Xtalpi](https://xtalpi.com/)
+Work: 现就职于[Xtalpi](https://www.jingtaikeji.com)
 
 Github: [KylinJiang](https://github.com/LunziQwQ)
 
