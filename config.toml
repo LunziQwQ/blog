@@ -10,7 +10,7 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
 
 [params]
   scheme = "preference" # light, dark, gray or preference
-  description = "This what i live for"
+  description = "This is what i live for"
 
 [menu]
   [[menu.main]]
