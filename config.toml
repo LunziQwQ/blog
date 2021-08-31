@@ -13,10 +13,16 @@ copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
   description = "This is what i live for"
 
 [menu]
+   [[menu.main]]
+    name = "RecentUpdate"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "SomethingCool"
+    url = "/something_cool"
+    weight = 2
   [[menu.main]]
     name = "AboutMe"
     url = "/about/index.html"
-  [[menu.main]]
-    name = "LifeGameDemo"
-    url = "https://lifegame.lunzi.space/"
+    weight = 3
 

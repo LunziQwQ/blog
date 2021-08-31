@@ -1,48 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://www.lunzi.space/something_cool/</loc>
+    <lastmod>2021-08-31T01:06:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.lunzi.space/</loc>
     <lastmod>2020-05-26T01:36:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/post/</loc>
     <lastmod>2020-05-26T01:36:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/post/mbti/</loc>
     <lastmod>2020-05-26T01:36:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/post/explor_myself/</loc>
     <lastmod>2020-04-29T16:09:25+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/post/optimize_computing_docker_image/</loc>
     <lastmod>2020-01-08T11:31:25+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/post/start_blog/</loc>
     <lastmod>2019-11-06T01:17:49+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/about/</loc>
     <lastmod>2019-11-06T01:17:09+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lunzi.space/tags/</loc>
   </url>
-  
 </urlset>
