@@ -1,9 +1,37 @@
 {{ define "main" }}
 	<article class="post">
 		<h1><a href="{{ .Permalink }}">{{ .Title }}</a> {{ if .Draft }}(Draft){{ end }}</h1>
+		{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+		{{ $minutes := math.Floor (div $readTime 60) }}
+		<p class="meta">
+			Posted on <span class="postdate">{{ .Date.Format "02. January 2006" }}
+			{{if $minutes}}
+				<br>
+				Reading time: about {{ $minutes }} {{ cond (eq $minutes 1) "minute" "minutes" }}.
+			{{end}}
+		</p>
+		<hr>
 
 		<div class="post-content">{{ .Content | safeHTML }}</div>
 
-		<p class="meta">Posted on <span class="postdate">{{ .Date.Format "02. January 2006" }}</span></p>
+		{{ if or (.Params.categories) (.Params.tags) }}
+			<hr>
+			<p class="meta">
+				{{ if .Params.categories }}
+					<strong>Categories:</strong>
+					{{range .Params.categories}}
+						<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+					{{end}}
+					<br>
+				{{end}}
+				{{ if .Params.tags }}
+					<strong>Tags:</strong>
+					{{range .Params.tags}}
+						<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+					{{end}}
+				{{end}}
+			</p>
+		{{end}}
 	</article>
 {{ end }}
+cd

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on KylinJiang&#39;s blog</title>
@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 11:31:25 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jan 2020 11:31:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.lunzi.space/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>科学计算Docker镜像的优化</title>
       <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
@@ -15,6 +19,7 @@
       
       <guid>https://www.lunzi.space/post/optimize_computing_docker_image/</guid>
       <description>&lt;h1 id=&#34;前因&#34;&gt;前因&lt;/h1&gt;
+
 &lt;p&gt;由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上&lt;/p&gt;</description>
     </item>
     
