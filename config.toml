@@ -5,24 +5,35 @@ theme = "solar-theme-hugo"
 paginate = 5
 publishDir = "docs"
 
-pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
+pygmentsStyle = "solarized-dark" 
 copyright = "Copyright © 2019 KylinJiang. All Rights Reserve"
 
 [params]
-  scheme = "preference" # light, dark, gray or preference
+  scheme = "dark" # light, dark, gray or preference
   description = "This is what i live for"
 
 [menu]
-   [[menu.main]]
+   [[menu.docs]]
     name = "RecentUpdate"
     url = "/"
     weight = 1
+  [[menu.docs]]
+    name = "Categories"
+    url = "/categories"
+    weight = 2
+  [[menu.docs]]
+    name = " Tags"
+    url = "/tags"
+    weight = 3
   [[menu.main]]
     name = "SomethingCool"
     url = "/something_cool"
-    weight = 2
+    weight = 99
   [[menu.main]]
     name = "AboutMe"
     url = "/about/index.html"
-    weight = 3
+    weight = 100
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"

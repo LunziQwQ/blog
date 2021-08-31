@@ -1,6 +1,8 @@
 ---
-title: "【Tech】计算镜像的优化"
+title: "科学计算Docker镜像的优化"
 date: 2020-01-08T11:31:25+08:00
+categories: ["技术"]
+tags: ["Docker"]
 ---
 
 # 前因

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on KylinJiang&#39;s blog</title>
-    <link>https://www.lunzi.space/post/</link>
-    <description>Recent content in Posts on KylinJiang&#39;s blog</description>
+    <title>杂谈 on KylinJiang&#39;s blog</title>
+    <link>https://www.lunzi.space/categories/%E6%9D%82%E8%B0%88/</link>
+    <description>Recent content in 杂谈 on KylinJiang&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
-    <lastBuildDate>Tue, 26 May 2020 01:36:18 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 May 2020 01:36:18 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/categories/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>借助MBTI测试蹂躏自己</title>
       <link>https://www.lunzi.space/post/mbti/</link>
@@ -26,16 +26,6 @@
       <guid>https://www.lunzi.space/post/explor_myself/</guid>
       <description>&lt;h1 id=&#34;开个头&#34;&gt;开个头&lt;/h1&gt;
 &lt;p&gt;其实一直不想把自己的文字拨弄的过于华丽而酸腐，堆砌华丽辞藻的背后往往是不够丰富的灵魂。文字是与自己思想的交流，但并不会直接将原始的交流诉诸于笔下，一旦经过编排与修饰，他就开始隐含着对阅读者的一种期待，无论是期望于理解还是期望于获取仰慕，终归是想要去向外界表达些什么的。人人都希望展现自己的不一样，我也庸俗的如此，但却依然写下了这个华丽且无意义的标题，当然细心的也可以关注这个页面地址中暴露的title，感受一下与华丽对立的苍白。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>科学计算Docker镜像的优化</title>
-      <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
-      <pubDate>Wed, 08 Jan 2020 11:31:25 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/post/optimize_computing_docker_image/</guid>
-      <description>&lt;h1 id=&#34;前因&#34;&gt;前因&lt;/h1&gt;
-&lt;p&gt;由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上&lt;/p&gt;</description>
     </item>
     
     <item>

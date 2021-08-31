@@ -9,6 +9,22 @@
     <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
     <lastBuildDate>Tue, 26 May 2020 01:36:18 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Me</title>
+      <link>https://www.lunzi.space/about/</link>
+      <pubDate>Tue, 31 Aug 2021 06:00:00 +0800</pubDate>
+      
+      <guid>https://www.lunzi.space/about/</guid>
+      <description>Hi 这里是KylinJiang，或者叫我轮子 95后Coder，来自中原古都，望安魂于广深
+毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下
+热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），工作后却屈服于时间苟且打着王者（段位还不高…
+Work: 现就职于Xtalpi
+Github: KylinJiang
+Mail: me@lunzi.space
+关于本站 Blog: Hugo + GithubPages
+theme: solar-theme-hugo(fork)</description>
+    </item>
+    
+    <item>
       <title>Something Cool</title>
       <link>https://www.lunzi.space/something_cool/</link>
       <pubDate>Tue, 31 Aug 2021 01:06:00 +0800</pubDate>
@@ -38,7 +54,7 @@
     </item>
     
     <item>
-      <title>【Tech】计算镜像的优化</title>
+      <title>科学计算Docker镜像的优化</title>
       <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
       <pubDate>Wed, 08 Jan 2020 11:31:25 +0800</pubDate>
       
@@ -62,22 +78,6 @@
 &lt;/ul&gt;
 &lt;p&gt;我也不例外，兜兜转转，还是屈服于较为昂贵的服务器费用与需要续费的不稳定性，博客嘛，归根结底还是内容至上的。&lt;/p&gt;
 &lt;p&gt;说起来这已经是第三版blog了，第一版自己写的前端，年少轻狂红袖添香。第二版使用了ghost博客系统，迫于羞耻没有继承原内容。然后开始用心的技术总结与输出，我也凭借着它得到了面试官的赏识，进入了一家心仪的公司。步入工作后的生活节奏的确与上学时有较大的不同，规律的作息与每日的工作让我在输出上怠惰了许久，直到自己的云服务器被回收，才想起这码事情。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.lunzi.space/about/</link>
-      <pubDate>Wed, 06 Nov 2019 01:17:09 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/about/</guid>
-      <description>Hi 这里是轮子 95后Coder，来自中原古都，望安魂于广深
-毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下
-热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），工作后却屈服于时间苟且打着王者（段位还不高…
-Work: 现就职于Xtalpi
-Github: KylinJiang
-Mail: me@lunzi.space
-关于本站 Blog: Hugo + GithubPages
-theme: solar-theme-hugo(fork)</description>
     </item>
     
   </channel>

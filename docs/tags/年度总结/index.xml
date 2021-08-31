@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>年度总结 on KylinJiang&#39;s blog</title>
+    <link>https://www.lunzi.space/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+    <description>Recent content in 年度总结 on KylinJiang&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
+    <lastBuildDate>Wed, 06 Nov 2019 01:17:49 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客伊始</title>
+      <link>https://www.lunzi.space/post/start_blog/</link>
+      <pubDate>Wed, 06 Nov 2019 01:17:49 +0800</pubDate>
+      
+      <guid>https://www.lunzi.space/post/start_blog/</guid>
+      <description>&lt;p&gt;听说所有写博客的人都有四个阶段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;折腾域名+云服务器&lt;/li&gt;
+&lt;li&gt;自制blog系统&lt;/li&gt;
+&lt;li&gt;折腾现有blog系统&lt;/li&gt;
+&lt;li&gt;回归内容，静态blog。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我也不例外，兜兜转转，还是屈服于较为昂贵的服务器费用与需要续费的不稳定性，博客嘛，归根结底还是内容至上的。&lt;/p&gt;
+&lt;p&gt;说起来这已经是第三版blog了，第一版自己写的前端，年少轻狂红袖添香。第二版使用了ghost博客系统，迫于羞耻没有继承原内容。然后开始用心的技术总结与输出，我也凭借着它得到了面试官的赏识，进入了一家心仪的公司。步入工作后的生活节奏的确与上学时有较大的不同，规律的作息与每日的工作让我在输出上怠惰了许久，直到自己的云服务器被回收，才想起这码事情。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
