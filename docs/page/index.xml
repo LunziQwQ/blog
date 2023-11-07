@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on KylinJiang&#39;s Blog</title>
+        <link>https://www.lunzi.space/page/</link>
+        <description>Recent content in Pages on KylinJiang&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
+        <lastBuildDate>Tue, 31 Aug 2021 06:00:00 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>https://www.lunzi.space/about/</link>
+        <pubDate>Tue, 31 Aug 2021 06:00:00 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/about/</guid>
+        <description>&lt;img src="https://www.lunzi.space/about/Ayaka.jpeg" alt="Featured image of post About Me" /&gt;&lt;h1 id=&#34;hi-这里是kylinjiang或者叫我轮子&#34;&gt;Hi 这里是KylinJiang，或者叫我轮子&lt;/h1&gt;
+&lt;p&gt;95后Coder，二次元，宅，强迫症&lt;br&gt;
+来自中原古都，望安魂于广深&lt;/p&gt;
+&lt;p&gt;毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下&lt;/p&gt;
+&lt;p&gt;热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），却屈服于时间瞎玩派派，瓦瓦，以及各种移动端二游…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work:&lt;/strong&gt; 现就职于&lt;a class=&#34;link&#34; href=&#34;https://www.jingtaikeji.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Xtalpi&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Github:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/LunziQwQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KylinJiang&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Mail:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;mailto:me@lunzi.space&#34; &gt;me@lunzi.space&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于本站&#34;&gt;关于本站&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Blog:&lt;/strong&gt; Hugo + GithubPages&lt;br&gt;
+&lt;strong&gt;theme:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Something Cool</title>
+        <link>https://www.lunzi.space/something_cool/</link>
+        <pubDate>Tue, 31 Aug 2021 01:06:00 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/something_cool/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;%28https://lifegame.lunzi.space%29&#34; &gt;GameOfLife(生命游戏)&lt;/a&gt;&lt;/strong&gt;：大学初次接触前端开发的练手作品~&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://www.lunzi.space/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.lunzi.space/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://www.lunzi.space/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.lunzi.space/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

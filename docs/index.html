@@ -1,199 +1,643 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta name="generator" content="Hugo 0.58.2" />
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		
-			<link href="/index.xml" rel="alternate" type="application/rss+xml" title="KylinJiang&#39;s blog" />
-			<link href="/index.xml" rel="feed" type="application/rss+xml" title="KylinJiang&#39;s blog" />
-		
+<html lang="en" dir="ltr">
+    <head>
+	<meta name="generator" content="Hugo 0.120.3"><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='This is what i live for'>
+<title>KylinJiang&#39;s Blog</title>
 
-		<title>KylinJiang&#39;s blog</title>
+<link rel='canonical' href='https://www.lunzi.space/'>
 
-		
-		<link rel="stylesheet" href="https://www.lunzi.space/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='KylinJiang&#39;s Blog'>
+<meta property='og:description' content='This is what i live for'>
+<meta property='og:url' content='https://www.lunzi.space/'>
+<meta property='og:site_name' content='KylinJiang&#39;s Blog'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2021-08-31T06:00:00&#43;08:00 '/>
+<meta name="twitter:title" content="KylinJiang&#39;s Blog">
+<meta name="twitter:description" content="This is what i live for"><link rel="alternate" type="application/rss&#43;xml" href="https://www.lunzi.space/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-	</head>
-	<body>
-		<header id="header">
-			<h1><a href="https://www.lunzi.space/">KylinJiang&#39;s blog</a></h1>
-			<p>This is what i live for</p>
-		</header>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-		<div id="page">
-			<div id="sidebar">
-				<nav>
-	
-		<ul class="nav">
-			
-				<li><a href="/"><span>RecentUpdate</span></a></li>
-			
-				<li><a href="/categories"><span>Categories</span></a></li>
-			
-				<li><a href="/tags"><span> Tags</span></a></li>
-			
-		</ul>
-	
-		<ul class="nav">
-			
-				<li><a href="/something_cool"><span>SomethingCool</span></a></li>
-			
-				<li><a href="/about/index.html"><span>AboutMe</span></a></li>
-			
-		</ul>
-	
-</nav>
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-			</div>
-
-			<div id="content">
-				
-	
-		<article class="post">
-			<h1><a href="https://www.lunzi.space/about/">About Me</a> </h1>
-
-			<div class="post-content">
-				<p>Hi 这里是KylinJiang，或者叫我轮子 95后Coder，来自中原古都，望安魂于广深
-毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下
-热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），工作后却屈服于时间苟且打着王者（段位还不高…
-Work: 现就职于Xtalpi
-Github: KylinJiang
-Mail: me@lunzi.space
-关于本站 Blog: Hugo + GithubPages
-theme: solar-theme-hugo(fork) </p>
-			</div>
-
-			<p class="meta">
-				<strong>Posted:</strong>
-				<span class="postdate">31. August 2021</span>
-				
-				
-			</p>
-		</article>
-	
-		<article class="post">
-			<h1><a href="https://www.lunzi.space/something_cool/">Something Cool</a> </h1>
-
-			<div class="post-content">
-				<p> GameOfLife(生命游戏)：大学初次接触前端开发的逗比作品~   </p>
-			</div>
-
-			<p class="meta">
-				<strong>Posted:</strong>
-				<span class="postdate">31. August 2021</span>
-				
-				
-			</p>
-		</article>
-	
-		<article class="post">
-			<h1><a href="https://www.lunzi.space/post/mbti/">借助MBTI测试蹂躏自己</a> </h1>
-
-			<div class="post-content">
-				<p>来由 阴差阳错，上班摸鱼的我在知乎看到了MBTI相关的消息，心血来潮的又做了一次MBTI测试，得到了ENTP的结果。实际上我原先并不怎么在意星座与性格测试，但是对比了ENTP型性格的说明，我诧异地发现很多细节如此贴切。冷静下来check一下自己有没有被凹人设的倾向或巴纳姆效应（人们非常容易对笼统的一般性的人格描述感到十分准确）所影响，我开始对MBTI的性格分析产生了兴趣
-  … </p>
-			</div>
-
-			<p class="meta">
-				<strong>Posted:</strong>
-				<span class="postdate">26. May 2020</span>
-				
-					; <strong>Categories:</strong>
-					
-						<a href="/categories/%E6%9D%82%E8%B0%88">杂谈</a>
-					
-					
-				
-				
-					; <strong>Tags:</strong>
-					
-						<a href="/tags/%E5%BF%83%E6%83%85">心情</a>
-					
-				
-			</p>
-		</article>
-	
-		<article class="post">
-			<h1><a href="https://www.lunzi.space/post/explor_myself/">用理智的浪漫理想主义对抗腐朽</a> </h1>
-
-			<div class="post-content">
-				<p>开个头 其实一直不想把自己的文字拨弄的过于华丽而酸腐，堆砌华丽辞藻的背后往往是不够丰富的灵魂。文字是与自己思想的交流，但并不会直接将原始的交流诉诸于笔下，一旦经过编排与修饰，他就开始隐含着对阅读者的一种期待，无论是期望于理解还是期望于获取仰慕，终归是想要去向外界表达些什么的。人人都希望展现自己的不一样，我也庸俗的如此，但却依然写下了这个华丽且无意义的标题，当然细心的也可以关注这个页面地址中暴露的title，感受一下与华丽对立的苍白。
-  … </p>
-			</div>
-
-			<p class="meta">
-				<strong>Posted:</strong>
-				<span class="postdate">29. April 2020</span>
-				
-					; <strong>Categories:</strong>
-					
-						<a href="/categories/%E6%9D%82%E8%B0%88">杂谈</a>
-					
-					
-				
-				
-					; <strong>Tags:</strong>
-					
-						<a href="/tags/%E5%BF%83%E6%83%85">心情</a>
-					
-				
-			</p>
-		</article>
-	
-		<article class="post">
-			<h1><a href="https://www.lunzi.space/post/optimize_computing_docker_image/">科学计算Docker镜像的优化</a> </h1>
-
-			<div class="post-content">
-				<p>前因 由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上
-  … </p>
-			</div>
-
-			<p class="meta">
-				<strong>Posted:</strong>
-				<span class="postdate">08. January 2020</span>
-				
-					; <strong>Categories:</strong>
-					
-						<a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
-					
-					
-				
-				
-					; <strong>Tags:</strong>
-					
-						<a href="/tags/docker">Docker</a>
-					
-				
-			</p>
-		</article>
-	
-
-	
-	<nav class="pagination" role="pagination">
-		
-		<span class="page-number">Page 1 of 2</span>
-		
-			<a class="older-posts" href="/page/2/">Older Posts <span aria-hidden="true">&rarr;</span></a>
-		
-	</nav>
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/GanYu_huf9f4cd0571edcc94276aadb6bfc1c5f0_39313_300x0_resize_q75_box.jpeg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👻</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KylinJiang&#39;s Blog</a></h1>
+            <h2 class="site-description">This is what i live for</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
 
 
 
-			</div>
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/something_cool' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
 
-			<footer id="footer">
-				<p class="copyright">
-					
-						Copyright © 2019 KylinJiang. All Rights Reserve
-					
-				</p>
-			</footer>
-		</div>
 
-		
-	</body>
+
+                
+                <span>SomethingCool</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/index.xml' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                
+                <span>RSS</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                <form action="/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+            
+        
+            
+                <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2020">
+                        
+                            <span class="year">2020</span>
+                            <span class="count">3</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/archives/#2019">
+                        
+                            <span class="year">2019</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Categories</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" class="font_size_3">
+                杂谈
+            </a>
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="font_size_1">
+                技术
+            </a>
+        
+    </div>
+</section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/%E5%BF%83%E6%83%85/" class="font_size_3">
+                心情
+            </a>
+        
+            <a href="/tags/docker/" class="font_size_1">
+                Docker
+            </a>
+        
+            <a href="/tags/mbti/" class="font_size_1">
+                MBTI
+            </a>
+        
+            <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="font_size_1">
+                年度总结
+            </a>
+        
+    </div>
+</section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    
+    
+    
+    
+
+    <section class="article-list">
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" >
+                杂谈
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/mbti_for_myself/">借助MBTI测试蹂躏自己</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 26, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" >
+                杂谈
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/explore_myself/">用理智的浪漫理想主义对抗腐朽</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 29, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/optimize_computing_docker_image/">科学计算Docker镜像的优化</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 08, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" >
+                杂谈
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/blog_start/">博客伊始</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 06, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+</article>
+        
+    </section>
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Copyright © 2019 KylinJiang. All Rights Reserve
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>

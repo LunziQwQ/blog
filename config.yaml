@@ -1,0 +1,111 @@
+title: "KylinJiang's Blog"
+baseURL: "https://www.lunzi.space/"
+paginate: 5
+publishDir: "docs"
+copyright: "Copyright © 2019 KylinJiang. All Rights Reserve"
+
+params:
+    mainSections:
+        - post
+
+    featuredImageField: image
+
+    sidebar:
+        emoji: 👻
+        subtitle: "This is what i live for"
+        avatar:
+            enabled: true
+            local: true
+            src: img/GanYu.jpeg
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: "Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+        # Available values: auto, light, dark
+        default: dark
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+    dateFormat:
+        published: Jan 02, 2006
+
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 10
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 100
+        page:
+            - type: toc
+            - type: archives
+              params:
+                  limit: 10
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 100
+
+menu:
+    main:
+        - identifier: "Home"
+          name: "Home"
+          url: "/"
+          weight: 1
+          params:
+              icon: "home"
+
+        - identifier: "SomethingCool"
+          name: "SomethingCool"
+          url: "/something_cool"
+          weight: 97
+          params:
+              icon: "infinity"
+
+        - identifier: "About"
+          name: "About"
+          url: "/about"
+          weight: 98
+          params:
+              icon: "user"
+
+        - identifier: "Search"
+          name: "Search"
+          url: "/search"
+          weight: 99
+          params:
+              icon: "search"
+
+        - identifier: "RSS"
+          name: "RSS"
+          url: "/index.xml"
+          weight: 100
+          params:
+              icon: "rss"
+
+taxonomies:
+    tag: tags
+    category: categories
+
+permalinks:
+    post: /post/:slug
+    page: /:slug

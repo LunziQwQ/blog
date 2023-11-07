@@ -1,164 +1,605 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前因 由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上
+'>
+<title>科学计算Docker镜像的优化</title>
 
-		<title>科学计算Docker镜像的优化</title>
+<link rel='canonical' href='https://www.lunzi.space/post/optimize_computing_docker_image/'>
 
-		
-		<link rel="stylesheet" href="https://www.lunzi.space/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='科学计算Docker镜像的优化'>
+<meta property='og:description' content='前因 由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上
+'>
+<meta property='og:url' content='https://www.lunzi.space/post/optimize_computing_docker_image/'>
+<meta property='og:site_name' content='KylinJiang&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2020-01-08T11:31:25&#43;08:00'/><meta property='article:modified_time' content='2020-01-08T11:31:25&#43;08:00'/>
+<meta name="twitter:title" content="科学计算Docker镜像的优化">
+<meta name="twitter:description" content="前因 由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上
+">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-	</head>
-	<body>
-		<header id="header">
-			<h1><a href="https://www.lunzi.space/">KylinJiang&#39;s blog</a></h1>
-			<p>This is what i live for</p>
-		</header>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-		<div id="page">
-			<div id="sidebar">
-				<nav>
-	
-		<ul class="nav">
-			
-				<li><a href="/"><span>RecentUpdate</span></a></li>
-			
-				<li><a href="/categories"><span>Categories</span></a></li>
-			
-				<li><a href="/tags"><span> Tags</span></a></li>
-			
-		</ul>
-	
-		<ul class="nav">
-			
-				<li><a href="/something_cool"><span>SomethingCool</span></a></li>
-			
-				<li><a href="/about/index.html"><span>AboutMe</span></a></li>
-			
-		</ul>
-	
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/GanYu_huf9f4cd0571edcc94276aadb6bfc1c5f0_39313_300x0_resize_q75_box.jpeg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👻</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KylinJiang&#39;s Blog</a></h1>
+            <h2 class="site-description">This is what i live for</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/something_cool' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+                
+                <span>SomethingCool</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/index.xml' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                
+                <span>RSS</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#将loaderpy等镜像内代码与镜像分离可以直接减少50的打包时间">将loader.py等镜像内代码与镜像分离，可以直接减少50%的打包时间**</a></li>
+    <li><a href="#合理将大型镜像分层">合理将大型镜像分层</a></li>
+  </ul>
 </nav>
+        </div>
+    </section>
 
-			</div>
+            
+        
+            
+                <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
 
-			<div id="content">
-				
-	<article class="post">
-		<h1><a href="https://www.lunzi.space/post/optimize_computing_docker_image/">科学计算Docker镜像的优化</a> </h1>
-		
-		
-		<p class="meta">
-			Posted on <span class="postdate">08. January 2020
-			
-				<br>
-				Reading time: about 10 minutes.
-			
-		</p>
-		<hr>
 
-		<div class="post-content"><h1 id="前因">前因</h1>
 
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2020">
+                        
+                            <span class="year">2020</span>
+                            <span class="count">3</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/archives/#2019">
+                        
+                            <span class="year">2019</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Categories</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" class="font_size_3">
+                杂谈
+            </a>
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="font_size_1">
+                技术
+            </a>
+        
+    </div>
+</section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/%E5%BF%83%E6%83%85/" class="font_size_3">
+                心情
+            </a>
+        
+            <a href="/tags/docker/" class="font_size_1">
+                Docker
+            </a>
+        
+            <a href="/tags/mbti/" class="font_size_1">
+                MBTI
+            </a>
+        
+            <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="font_size_1">
+                年度总结
+            </a>
+        
+    </div>
+</section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/optimize_computing_docker_image/">科学计算Docker镜像的优化</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 08, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="前因">前因</h1>
 <p>由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上</p>
-
 <h1 id="科学计算镜像有什么特点">科学计算镜像有什么特点</h1>
-
 <p>科学计算镜像，顾名思义就是用于一些一次性科学计算的镜像。与常见的服务镜像主要的区别在于，它是一个可能会<strong>多次，并发运行的独立计算节点。计算时间从数分钟到数天不等，保证无状态与幂等性</strong>。</p>
-
 <p>一般来说科学计算镜像都由一些科学领域的计算<strong>二进制</strong>，<strong>python库</strong>，和一个具体执行计算逻辑的<strong>loader</strong>构成。</p>
-
 <p>在需要庞大计算量的量化模拟，统计学模拟计算领域。将一个成熟的算法打包在容器内进行稳定的发布，大批量并发执行已经是一个司空见惯的操作了，但是由于算法专业性的影响，很大一部分镜像都是由领域专业的科学家简单学习后打包的，这样就带来了诸多计算机领域中不合理的问题。</p>
-
 <h1 id="问题调研">问题调研</h1>
-
 <p>在进行实际调研之前，我先列出了一些根据平时使用观察与用户反馈的到的信息：</p>
-
 <ul>
 <li>依赖太多二进制与python包导致镜像过大</li>
 <li>Docker build时间过长导致迭代测试效率低</li>
 <li>运行时间过长，出现异常中断后浪费过多计算资源</li>
 </ul>
-
 <p>这些信息看似合理，实际上并没有经过核实，猜想想要转化为实际需求还是需要更多的数据支撑的。为了从事实出发并寻找性价比最高的需求进行解决，我使用Python爬取了Jenkins的所有镜像打包记录，并同时爬取了Bitbucket上触发这些打包的Commit信息。</p>
-
 <p>得到原始数据后，通过commit信息的change_files列表可以简单归因打包镜像的原因，如修改了Dockerfile意味着用户改变了镜像环境，修改了*.py, *.go, *.sh, *.cpp等意味着用户改变了镜像代码or脚本，而修改了Jenkinsfile或配置文件意味着用户修改了CI配置等等。</p>
-
 <p>基于change_files这样的简单分类之后，我们便得到了一个从提交构建原因维度的数据表以及不同原因的venn图等，通过分析这些数据大概可以得出如下的一些结论：</p>
-
 <ul>
 <li>改变Dockerfile的构建平均时长是最长的</li>
 <li>无论是构建时间，还是构建次数，修改代码原因占比~50%</li>
 <li>一次构建可能掺杂着多个原因，如同时修改代码与Dockerfile，其中修改代码的需求是迫不及待的，单独修改代码的构建占所有包含修改代码的构建的~85%，而修改CI配置的构建往往放在与其他改动一起进行，独立修改占比极低。</li>
 <li>用户往往会因为依赖库升级而空commit进行镜像rebuild，这样的情形占用时间约10%</li>
 </ul>
-
 <p>得到了这样的结论之后，我们会发现其实通过数据所获得的结论和猜想还是有较大差异的，虽然镜像打包占用时间较长，但是与其根据猜想直接优化镜像打包速度，远不如直接砍掉用户更新代码的提交次数对时间的影响更大。</p>
-
 <h1 id="解决方案">解决方案</h1>
-
 <p>有了数据支持的结论之后，接下来就是解决方案了，根据科学计算镜像的特点以及数据的支撑，我们可以得到一些高效的解决方案：</p>
-
-<h2 id="将loader-py等镜像内代码与镜像分离-可以直接减少50-的打包时间">将loader.py等镜像内代码与镜像分离，可以直接减少50%的打包时间**</h2>
-
+<h2 id="将loaderpy等镜像内代码与镜像分离可以直接减少50的打包时间">将loader.py等镜像内代码与镜像分离，可以直接减少50%的打包时间**</h2>
 <p>实际上，代码与环境分离并不复杂，使用一个通用的loader，在其中执行下载指定代码文件并执行就可以实现。这样会牺牲一些初始化代码文件的时间，但带来的镜像构建体验的提升是巨大的。在准备好一个成熟的环境之后，Debug代码不需要反复的构建镜像，直接修改代码并上传执行，容器内下载即可快速在容器平台上进行大规模调试。</p>
-
 <h2 id="合理将大型镜像分层">合理将大型镜像分层</h2>
-
 <p>这个思想其实在Dockerfile最佳实践中便可以找到，通过寻找Dockerfile中长期不变的环境依赖，将其汇总固化成基镜像，在基镜像上构建频繁变化的环境，就可以有效减少每次构建中重复构建的时间。</p>
-
-<h1 id="发散思维-换个维度解决问题">发散思维，换个维度解决问题</h1>
-
+<h1 id="发散思维换个维度解决问题">发散思维，换个维度解决问题</h1>
 <p>以上都是基于计算机背景知识得出的解决方案，看上去行之有效且充满可行性，那么有没有更加好的方案呢？我们可以跳出计算机领域，从人的关系上来分析。</p>
-
 <p>低效镜像之所以出现，是由于算法镜像是由非计算机背景的科学家构建的，如果我们从组织架构上尝试解决问题，直接对科学家们屏蔽容器这一概念，能不能更好的解决问题呢？</p>
-
 <p>通过对之前爬取的数据进行进一步的清洗与整理，我们发现公司的镜像数量总数不多，较为可控，并且根据领域可以集中分类为几大理化原理的算法，镜像的迭代如果抛开代码变动，二进制版本与环境的迭代频率也非常低，平均每个镜像一个月变动一次左右。</p>
-
 <p>那么如果我们接手原有的镜像进行分类合并与优化，向科学家们不断收集新的计算环境需求并以专业技术实现。便可以用较低的人力成本来解决镜像质量低下，效率低下带来的迭代测试缓慢问题与构建成本。提升了稳定性与专业性，同时减少了科学家的学习成本，他们只需要写好loader脚本提交到我们提供的环境中，即可大批量分布式执行，这无疑是一件双赢的方案。</p>
-
 <p>软件工程无论在什么领域中，都是一个划分边界与分层治理的思路，这样的思路同样也可以应用在组织结构，人员分工中。科学家应该focus在算法实现与应用上，而Engineer则应该focus在系统效率，架构优化，成本控制，需求实现等方面。将镜像与科学家完全解耦之后，不仅减少了双方的学习成本与时间成本，Engineer还可以更好的迭代容器技术，想要推进或者换代新的容器平台，任务系统，支持MPI等种种迭代也不会再有镜像分散难以维护的阻力，这也恰恰是康威定律的有力体现。</p>
-
 <p>有些时候问题的根源并不一定是技术问题，遇到一个怎么都不能优雅解决的问题，也许是组织架构限制了你的思路，重构技术架构时不妨多思考一下组织结构和人员分工是否出现了问题。</p>
+<hr>
+<p><strong>&ldquo;设计系统的架构受制于产生这些设计的组织的沟通结构。&rdquo; ——M. Conway</strong></p>
+</section>
 
-<hr />
 
-<p><strong>&ldquo;设计系统的架构受制于产生这些设计的组织的沟通结构。&rdquo; ——M. Conway</strong></p></div>
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/docker/">Docker</a>
+        
+    </section>
 
-		
-			<hr>
-			<p class="meta">
-				
-					<strong>Categories:</strong>
-					
-						<a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
-					
-					<br>
-				
-				
-					<strong>Tags:</strong>
-					
-						<a href="/tags/docker">Docker</a>
-					
-				
-			</p>
-		
-	</article>
 
-			</div>
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
 
-			<footer id="footer">
-				<p class="copyright">
-					
-						Copyright © 2019 KylinJiang. All Rights Reserve
-					
-				</p>
-			</footer>
-		</div>
 
-		
-	</body>
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Copyright © 2019 KylinJiang. All Rights Reserve
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>

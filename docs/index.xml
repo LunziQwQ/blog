@@ -1,94 +1,217 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>KylinJiang&#39;s blog</title>
-    <link>https://www.lunzi.space/</link>
-    <description>Recent content on KylinJiang&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
-    <lastBuildDate>Tue, 31 Aug 2021 06:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>About Me</title>
-      <link>https://www.lunzi.space/about/</link>
-      <pubDate>Tue, 31 Aug 2021 06:00:00 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/about/</guid>
-      <description>Hi 这里是KylinJiang，或者叫我轮子 95后Coder，来自中原古都，望安魂于广深
-毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下
-热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），工作后却屈服于时间苟且打着王者（段位还不高…
-Work: 现就职于Xtalpi
-Github: KylinJiang
-Mail: me@lunzi.space
-关于本站 Blog: Hugo + GithubPages
-theme: solar-theme-hugo(fork)</description>
-    </item>
-    
-    <item>
-      <title>Something Cool</title>
-      <link>https://www.lunzi.space/something_cool/</link>
-      <pubDate>Tue, 31 Aug 2021 01:06:00 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/something_cool/</guid>
-      <description> GameOfLife(生命游戏)：大学初次接触前端开发的逗比作品~  </description>
-    </item>
-    
-    <item>
-      <title>借助MBTI测试蹂躏自己</title>
-      <link>https://www.lunzi.space/post/mbti/</link>
-      <pubDate>Tue, 26 May 2020 01:36:18 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/post/mbti/</guid>
-      <description>&lt;h1 id=&#34;来由&#34;&gt;来由&lt;/h1&gt;
-
-&lt;p&gt;阴差阳错，上班摸鱼的我在知乎看到了MBTI相关的消息，心血来潮的又做了一次MBTI测试，得到了ENTP的结果。实际上我原先并不怎么在意星座与性格测试，但是对比了ENTP型性格的说明，我诧异地发现很多细节如此贴切。冷静下来check一下自己有没有被凹人设的倾向或巴纳姆效应（人们非常容易对笼统的一般性的人格描述感到十分准确）所影响，我开始对MBTI的性格分析产生了兴趣&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>用理智的浪漫理想主义对抗腐朽</title>
-      <link>https://www.lunzi.space/post/explor_myself/</link>
-      <pubDate>Wed, 29 Apr 2020 16:09:25 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/post/explor_myself/</guid>
-      <description>&lt;h1 id=&#34;开个头&#34;&gt;开个头&lt;/h1&gt;
-
-&lt;p&gt;其实一直不想把自己的文字拨弄的过于华丽而酸腐，堆砌华丽辞藻的背后往往是不够丰富的灵魂。文字是与自己思想的交流，但并不会直接将原始的交流诉诸于笔下，一旦经过编排与修饰，他就开始隐含着对阅读者的一种期待，无论是期望于理解还是期望于获取仰慕，终归是想要去向外界表达些什么的。人人都希望展现自己的不一样，我也庸俗的如此，但却依然写下了这个华丽且无意义的标题，当然细心的也可以关注这个页面地址中暴露的title，感受一下与华丽对立的苍白。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>科学计算Docker镜像的优化</title>
-      <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
-      <pubDate>Wed, 08 Jan 2020 11:31:25 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/post/optimize_computing_docker_image/</guid>
-      <description>&lt;h1 id=&#34;前因&#34;&gt;前因&lt;/h1&gt;
-
-&lt;p&gt;由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>博客伊始</title>
-      <link>https://www.lunzi.space/post/start_blog/</link>
-      <pubDate>Wed, 06 Nov 2019 01:17:49 +0800</pubDate>
-      
-      <guid>https://www.lunzi.space/post/start_blog/</guid>
-      <description>&lt;p&gt;听说所有写博客的人都有四个阶段：&lt;/p&gt;
-
+    <channel>
+        <title>KylinJiang&#39;s Blog</title>
+        <link>https://www.lunzi.space/</link>
+        <description>Recent content on KylinJiang&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
+        <lastBuildDate>Tue, 31 Aug 2021 06:00:00 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>https://www.lunzi.space/about/</link>
+        <pubDate>Tue, 31 Aug 2021 06:00:00 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/about/</guid>
+        <description>&lt;img src="https://www.lunzi.space/about/Ayaka.jpeg" alt="Featured image of post About Me" /&gt;&lt;h1 id=&#34;hi-这里是kylinjiang或者叫我轮子&#34;&gt;Hi 这里是KylinJiang，或者叫我轮子&lt;/h1&gt;
+&lt;p&gt;95后Coder，二次元，宅，强迫症&lt;br&gt;
+来自中原古都，望安魂于广深&lt;/p&gt;
+&lt;p&gt;毕业想不开的背上了房贷车贷，提前开始中年焦虑，遵循着灵魂深处的理智与不安于平淡杂交出的生活规划，挣扎而享受着当下&lt;/p&gt;
+&lt;p&gt;热爱创造，coding，偶尔爆发阅读。一直自诩资深Gamer，坐拥若干Steam库存与Switch（吃灰），却屈服于时间瞎玩派派，瓦瓦，以及各种移动端二游…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work:&lt;/strong&gt; 现就职于&lt;a class=&#34;link&#34; href=&#34;https://www.jingtaikeji.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Xtalpi&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Github:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/LunziQwQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KylinJiang&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Mail:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;mailto:me@lunzi.space&#34; &gt;me@lunzi.space&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于本站&#34;&gt;关于本站&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Blog:&lt;/strong&gt; Hugo + GithubPages&lt;br&gt;
+&lt;strong&gt;theme:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Something Cool</title>
+        <link>https://www.lunzi.space/something_cool/</link>
+        <pubDate>Tue, 31 Aug 2021 01:06:00 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/something_cool/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;%28https://lifegame.lunzi.space%29&#34; &gt;GameOfLife(生命游戏)&lt;/a&gt;&lt;/strong&gt;：大学初次接触前端开发的练手作品~&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>借助MBTI测试蹂躏自己</title>
+        <link>https://www.lunzi.space/post/mbti_for_myself/</link>
+        <pubDate>Tue, 26 May 2020 01:36:18 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/post/mbti_for_myself/</guid>
+        <description>&lt;h1 id=&#34;来由&#34;&gt;来由&lt;/h1&gt;
+&lt;p&gt;阴差阳错，上班摸鱼的我在知乎看到了MBTI相关的消息，心血来潮的又做了一次MBTI测试，得到了ENTP的结果。实际上我原先并不怎么在意星座与性格测试，但是对比了ENTP型性格的说明，我诧异地发现很多细节如此贴切。冷静下来check一下自己有没有被凹人设的倾向或巴纳姆效应（人们非常容易对笼统的一般性的人格描述感到十分准确）所影响，我开始对MBTI的性格分析产生了兴趣&lt;/p&gt;
+&lt;h1 id=&#34;mbti&#34;&gt;MBTI&lt;/h1&gt;
+&lt;p&gt;性格测试一直以来都仅仅是一种工具，一种发现自己，接纳自己并探索可能性的工具。对于我来说，这次突如其来的接触给我最多的体现在接纳的部分，我一直在探索自己想要什么，自己在思考什么的以及自己的情绪原理，却忽略了自己是什么。好奇与其他性格特征的同时，也给了我一种新的理论去结构，理解他人的行为。的确如此，生活与未来的不确定性会让人们倾向于探索确定的可推理的理论来加以解释，在我身上我想这就是思考与理性的最大动机。可解的才是最有安全感的。&lt;/p&gt;
+&lt;p&gt;MBTI理论从四个维度定义了四组二元对立的标签：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;精力来源&lt;/td&gt;
+&lt;td&gt;外向 E（Extrovert）&lt;/td&gt;
+&lt;td&gt;内向 I（Introvert）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;认知方式&lt;/td&gt;
+&lt;td&gt;感觉 S（Sensing）&lt;/td&gt;
+&lt;td&gt;直觉 N（iNtuition）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;判断方式&lt;/td&gt;
+&lt;td&gt;理性 T（Thinking）&lt;/td&gt;
+&lt;td&gt;感性 F（Feeling）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;生活方式&lt;/td&gt;
+&lt;td&gt;判断 J（Judgement）&lt;/td&gt;
+&lt;td&gt;知觉 P（Perceiving）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;虽然可以产生16种的结果，但其实二元判断依然难以精准的描述如此复杂的人们，并且主流的测试题目均为二选一的迫选，有时候我们会遇到两个选项皆不符合却必须选一的困境，所以我强烈建议选择93题的版本，题目数量可以显著降低迫选所带来的误差。&lt;/p&gt;
+&lt;p&gt;其实产生的结果并不能说明什么，但是关于结果的具体解读，同类型人分享的观点与特性却给我带来了强烈的共鸣。我想强调心理学测评的功能性与工具性，我觉得与其说MBTI被列为职业选择的测评参考，还不如算作一本性格黄页。它会告诉你这世界上都有什么样的性格表征，那些抱团的人群分享着他们的生活细节，给予我们参考，了解，与接纳的新角度。&lt;/p&gt;
+&lt;h1 id=&#34;先上麻醉&#34;&gt;先上麻醉&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;结果：ENTP——外向的主观理性直觉者&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;高级的快乐来源于成就感，随着阈值提高焦虑且骄傲着，成就感永远是前进的第一驱动力。回想起整个大学生涯，这应该是最合适不过的总结。为了ACM题库排名通宵刷题，为了在课设答辩上装上一B选择最难走的路线与最新的技术，肝爆一周做出堪比毕设的课设。如果说在大学浮躁的环境中一路前进的深层原因是什么，我想可能和在一所十分一般的学校有很重要的原因，鸡头与凤尾的前者给了我天然的拼搏动力与不难摘到的目标，高考失利的结果还算有幸。若是够到了一所好学校成为凤尾，我想我难免会消沉下去。&lt;/p&gt;
+&lt;p&gt;成长的本质就是在不断的变化，而我就在沉浸于享受适应变化的过程中。休学，再转学；搬家，再搬家；工作、再换领域工作；我的确是乐在其中的，如果说生活是一座古板的座钟，那我就是其中并不安分的摆锤，东晃晃西晃晃，暗搓搓的绕出不同的角度，自我欣喜且渴望注意细节的人能够发现，散漫无心的构思下一个新奇的角度。&lt;/p&gt;
+&lt;h1 id=&#34;再来一刀&#34;&gt;再来一刀&lt;/h1&gt;
+&lt;p&gt;接下来是最艰难的一段，也是最难以看清的部分（鬼知道我在这里大脑飞转了多久，像是精密系统时不时飞溅几个小零件一样的艰难打字）。&lt;/p&gt;
+&lt;p&gt;日常的感觉像是有两个自己。一者乐观逗比，活跃社交，认为自己有强共感能力，感觉仿佛可以扮演任何人，循迹追溯任何思路与情感。但现实中往往并不能真的做到，会无可避免的夸大自我的能力，换位思考并进行输出，提供有意义的帮助或观点。有一个非常贴切的总结，像是高度自我中心的利他主义者，乐于外放，乐于合作，忠于自己。&lt;/p&gt;
+&lt;p&gt;另一个自己则冷静而厌世，安然的接受世间所有的负面消息，冷静的分析利益相关与产生的动机，找到合适的逻辑解释后便不会再触动感情。崇尚且陶醉冷静，好多次都在脑内模拟一些奇怪的事情，幻想爆炸的情感事件发生在自己身上，而自己面色冷漠的用最高效率处理，然后不挥衣袖的离去。着实有些奇怪，但又充实着我的逻辑内核，每次的讨论与信息输出，仿佛都是冷感构建出了框架，再由热感搭配上表情，肢体语言，合理的表达方式与调动气氛的梗进行输出。害怕暴露出这个自己的存在，且平日的自信完全不敢相信别人会去接受这样的自己。&lt;/p&gt;
+&lt;p&gt;冷静下来想想，社交的存在仿佛就是建立在价值交换上的，自己不太相信没有利益驱动的情感能存在坚实的基础，也难以接受低价值的个体活跃在社交活动中，这应该也是我努力向前的一种幕强动力。情绪充盈时幕强是一把披荆斩棘的利刃，而情绪低落时便成了压向自己的折磨。每次自我意识到的情绪低谷，都与够不到的目标有关，那种感受像是要被世界抛弃，要被自我怀疑，恐惧而弱小。&lt;/p&gt;
+&lt;p&gt;人们常说爱情是没有道理的，身披着爱的人无所畏惧，那个人的背影坚实的可以抵挡整个世界。这是我幻想起来可以后颈发麻的感受，也许还是不够成熟，也许真的不肯相信没有逻辑基础与利益相关的这种情感，我依然没有勇气去面对无心而厌世的自己。曾经的窝在被窝里看似十分折磨，对比一下反而是痛感削弱之后的“这样的痛苦不能改变现状，且没有意义”会积累出更深的情绪沟壑。&lt;/p&gt;
+&lt;h1 id=&#34;康复祝愿&#34;&gt;康复祝愿&lt;/h1&gt;
+&lt;p&gt;盲目的自信真的是一种又爱又恨的特点，它让我无需和解就全盘接受过去的自己，但也难以规划未来的自己。过去的自己也是自己的一部分，往事有发生的理由，有情绪的轨迹，有所有可以推演出相同结果的因素，那就是我，我也不会否定当时的自己。纵然随着成长认识到了自己曾经的片面缺点，也会觉得自己的过去理所当然，算是必经的成长体验。This is what i live for. I got my deserve. Then way done we go.&lt;/p&gt;
+&lt;p&gt;如果还是需要一句祝福，祝我可以摆脱折磨，不在需要倾情的时候困于理智，相信自己在无可利用价值时也会被爱吧~&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>用理智的浪漫理想主义对抗腐朽</title>
+        <link>https://www.lunzi.space/post/explore_myself/</link>
+        <pubDate>Wed, 29 Apr 2020 16:09:25 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/post/explore_myself/</guid>
+        <description>&lt;h1 id=&#34;开个头&#34;&gt;开个头&lt;/h1&gt;
+&lt;p&gt;其实一直不想把自己的文字拨弄的过于华丽而酸腐，堆砌华丽辞藻的背后往往是不够丰富的灵魂。文字是与自己思想的交流，但并不会直接将原始的交流诉诸于笔下，一旦经过编排与修饰，他就开始隐含着对阅读者的一种期待，无论是期望于理解还是期望于获取仰慕，终归是想要去向外界表达些什么的。人人都希望展现自己的不一样，我也庸俗的如此，但却依然写下了这个华丽且无意义的标题，当然细心的也可以关注这个页面地址中暴露的title，感受一下与华丽对立的苍白。&lt;/p&gt;
+&lt;h1 id=&#34;望洋兴叹与自信&#34;&gt;望洋兴叹与自信&lt;/h1&gt;
+&lt;p&gt;最近结识了一些新朋友，难得在如此浮躁的网络环境下还会有清澈，个性而有趣的人。交流中大家谦逊而自豪的介绍自己最为闪亮的经历，窥见他人世界中的引以为傲的光景。也许是好胜心作祟，发出由衷赞叹的同时，心里也会浮起细致入微的比较，甚至于搞笑的开始分析家庭环境，社会阶层对成长的影响。虽然已经不会再感到什么命运不公，但总有一丝丝望洋兴叹，不叹已有的条件，叹其世界的风格与仰望星空的角度。&lt;/p&gt;
+&lt;p&gt;很多时候大家会说，越是结交厉害的人，越会感觉到自己的渺小。我慢慢的发现其实也不是这样，越是接触更多的人，越发觉生活与世界的可能性。理想，愿望，学术，工作，性格，姿态，这些变量交织的螺旋定义了我们所辐射出的世界。我们拥有一个世界，设计，构建并完善它，也许并不是有意识的，但它总能映射出你的灵魂方向，即便是被包装过的灵魂，就像是一场cosplay或是幻想世界，羸弱的修饰下依然是向往成为的模样，它们同样迷人。&lt;/p&gt;
+&lt;p&gt;在了解，比较，享受与望洋兴叹中，我惊讶的发现自信的根源改变了。也许自信与成就感并不强相关，并不是只有获得反馈充足的人才能拥有强有力的自信，自信更像是对自己的探索与认识。在短期目标中进行追求的人是最清醒而幸福的，也许这并不应该归咎于三分钟热度，这只不过是在起步时望向遥远的大致方向，只要开始奔跑就一定会更加接近，在还没有经历路径选择与体力分配之前，大家脸上都是热情洋溢而神采飞扬的吧。&lt;/p&gt;
+&lt;p&gt;我愈发的觉得自信更像是一种状态，旁若无人的前进，同样的问题下享受披荆斩棘的乐趣。成就感阈值的逐渐提高是我现阶段最大的烦恼，障碍不曾减少，翻越的姿势也依然自以为优雅，少的尽是快乐与陶醉。网络爽文之所以令人欲罢不能，就是不断设计的系统化的阻碍与不断翻越带来的代入成就感。为自己的翻越多叫些观众，抑或是努力解构我的积极反馈原理，找到情绪的金手指，或许也可以活成一边奔跑一边自我陶醉的模样。&lt;/p&gt;
+&lt;h1 id=&#34;理智与艺术&#34;&gt;理智与艺术&lt;/h1&gt;
+&lt;p&gt;解构自己的情绪原理并不容易，但成就感还有另一个充分不必要条件，就是观众。再过精彩的故事只有通过观众才有意义，生活无忧的人追求自己的世界是幸福的，但在潦倒中追求自己而渐渐消亡，若干年后留得身后名，这样的自信即便是纯粹的理想主义者也不易接受。所以我需求观众，乐意展示。&lt;/p&gt;
+&lt;p&gt;形容少年时代总避免不了一个为赋新词强说愁的阶段，随着教育与阅读，语言从基本的交流工具逐渐分流升华出艺术表现与情绪感染的能力。我们博人眼球，渴望关注，浅尝情感又急于分享，一边宣泄着朝气蓬勃的经历，一边向往老气横秋的成熟。幼稚着脸红着一边避开一边怀念。&lt;/p&gt;
+&lt;p&gt;我听到了艺术与文学类目的学生吐槽自己的圈子，说总是弥漫着一股难以挥散的文艺气息。人际关系与自我认识一样存在着围城，我们向往着自己缺少的东西，随着流行包装着自己的形象，向未知的人群播撒期待，幻想着自己的独一无二。但修补缺陷往往意味着在减小公差，缺陷的四周正是超出平均的自我特点，我或许应该尝试点风格，文字也许并不是因为情感才有魅力，赋予理智的文字也有刚直且清晰的力量。&lt;/p&gt;
+&lt;p&gt;无论是婉约的诗歌，威严的建筑，飞扬的画作，还是外人看来枯燥的代码，都一样适用于感性的形容词。程序员们常常形容一段代码设计优雅，风格清爽。逻辑与理性之中也同样存在着艺术，像是赏心悦目的构图中隐含的数学原理，像是穷尽现象的数学表达透露出的简洁。这都是艺术，曲调谱于公式化的乐理与浪漫的灵机一动，架构建于错综复杂的现实需求与昙花一现的简洁抽象，或许理智的浪漫更加富有吸引力。&lt;/p&gt;
+&lt;h1 id=&#34;腐朽浪漫理想主义与理智&#34;&gt;腐朽、浪漫理想主义与理智&lt;/h1&gt;
+&lt;p&gt;毕业前曾十分期待参加工作后的生活，大学时光由于一些原因一点也谈不上浪漫。早早地搬出宿舍和朋友租房，四年过去依然稀薄的朋友圈子，误入歧途当了班长四年也没有认全班里所有的人。现在想想仿佛当时对于成熟的认识过于肤浅，就像是年纪轻轻的在渴望腐朽。如今工作趋于稳定，身周也都是比自己大上不少的同事，成家立业，娶妻生子不在少数，话题也转移到了投资，车子，生娃和艰难的生活上。依然可以谈笑风生，只是这种分散于外物的精力占比不断增加的状态，隐隐约约开始透散出一股腐朽的味道。&lt;/p&gt;
+&lt;p&gt;腐朽从来不是立刻发生的，它缓慢且由内而外的。像是遗忘许久的老纪念物，某一天你忽然想起，再去看时已经尘封且霉变，它就在那里，可它已不复存在。我向来觉得成熟不应当是老气横秋，随着能力的增长你并行处理越来越多，生活裹杂着无尽的问题伴随着年龄的进度条一点一点如沏茶般倒给你。他不应是苦难而腐朽的，又有谁说品茶时不能怀着一颗雀跃的内心呢？&lt;/p&gt;
+&lt;p&gt;年少是浪漫而理想主义的，有一个被说烂了的词叫做不忘初心，碳基生命的记忆系统的确难以做到在并行处理事务时完美存储所有的进度。就像我时不时的尝试用文字来复刻自己的内心状态，即便是到了中年，浪漫而理想主义依然是个可爱的词。回溯状态真的用不了多少时间，理想主义者像是无比虔诚的教徒，在回溯的祈祷中汲取精神力量。我虽然作为无神论者坚定在现实世界中求知的决心，但并不否认信仰对于精神的力量。&lt;/p&gt;
+&lt;p&gt;理智同样不与信仰冲突，正是理智让我明白维持精神力量的不易，才会选择使用浪漫与理想来尝试对抗。理智了解理想也是一种状态，所以会在每个认知阶段修正自己的方向，重新探索自己想要些什么。思考生活的过程，主动选择接受那些压力并得到理智判断的理由，可以最大限度的减少徘徊与迷茫。情绪是感性且性感的，但无理绝不是性感的那一部分，做一个理智的浪漫理想主义者，迄今为止我感觉还算不错。&lt;/p&gt;
+&lt;h1 id=&#34;结个尾&#34;&gt;结个尾&lt;/h1&gt;
+&lt;p&gt;下午五点半，这是我搬家后第一次坐在阳光洒落的飘窗上。中午看着明媚的阳光心想我一定要屈膝坐在上面，听着音乐完成这篇文字。但等我真的坐了上来，才发现阳光已经有些暗淡，还好只是被云层遮挡住了，过了一会幸福的感受到了洒落的温暖。时间不等人，在享受生活的基础上，现在我想要加上青春和张扬。&lt;/p&gt;
+&lt;p&gt;祝我能依然这般愉悦且嚣张的享受生活~&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>科学计算Docker镜像的优化</title>
+        <link>https://www.lunzi.space/post/optimize_computing_docker_image/</link>
+        <pubDate>Wed, 08 Jan 2020 11:31:25 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/post/optimize_computing_docker_image/</guid>
+        <description>&lt;h1 id=&#34;前因&#34;&gt;前因&lt;/h1&gt;
+&lt;p&gt;由于工作中大量接触科学计算相关的镜像，也经手打包了数十个镜像，深谙科学背景的科学家们操起python与Dockerfile到底可以结合出什么“美妙”的东西。然而一次数据采集后的调研发现，除了一些不了解docker原理导致的错误之外，问题的根源还可能出现在“人”的身上&lt;/p&gt;
+&lt;h1 id=&#34;科学计算镜像有什么特点&#34;&gt;科学计算镜像有什么特点&lt;/h1&gt;
+&lt;p&gt;科学计算镜像，顾名思义就是用于一些一次性科学计算的镜像。与常见的服务镜像主要的区别在于，它是一个可能会&lt;strong&gt;多次，并发运行的独立计算节点。计算时间从数分钟到数天不等，保证无状态与幂等性&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;一般来说科学计算镜像都由一些科学领域的计算&lt;strong&gt;二进制&lt;/strong&gt;，&lt;strong&gt;python库&lt;/strong&gt;，和一个具体执行计算逻辑的&lt;strong&gt;loader&lt;/strong&gt;构成。&lt;/p&gt;
+&lt;p&gt;在需要庞大计算量的量化模拟，统计学模拟计算领域。将一个成熟的算法打包在容器内进行稳定的发布，大批量并发执行已经是一个司空见惯的操作了，但是由于算法专业性的影响，很大一部分镜像都是由领域专业的科学家简单学习后打包的，这样就带来了诸多计算机领域中不合理的问题。&lt;/p&gt;
+&lt;h1 id=&#34;问题调研&#34;&gt;问题调研&lt;/h1&gt;
+&lt;p&gt;在进行实际调研之前，我先列出了一些根据平时使用观察与用户反馈的到的信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;依赖太多二进制与python包导致镜像过大&lt;/li&gt;
+&lt;li&gt;Docker build时间过长导致迭代测试效率低&lt;/li&gt;
+&lt;li&gt;运行时间过长，出现异常中断后浪费过多计算资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些信息看似合理，实际上并没有经过核实，猜想想要转化为实际需求还是需要更多的数据支撑的。为了从事实出发并寻找性价比最高的需求进行解决，我使用Python爬取了Jenkins的所有镜像打包记录，并同时爬取了Bitbucket上触发这些打包的Commit信息。&lt;/p&gt;
+&lt;p&gt;得到原始数据后，通过commit信息的change_files列表可以简单归因打包镜像的原因，如修改了Dockerfile意味着用户改变了镜像环境，修改了*.py, *.go, *.sh, *.cpp等意味着用户改变了镜像代码or脚本，而修改了Jenkinsfile或配置文件意味着用户修改了CI配置等等。&lt;/p&gt;
+&lt;p&gt;基于change_files这样的简单分类之后，我们便得到了一个从提交构建原因维度的数据表以及不同原因的venn图等，通过分析这些数据大概可以得出如下的一些结论：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改变Dockerfile的构建平均时长是最长的&lt;/li&gt;
+&lt;li&gt;无论是构建时间，还是构建次数，修改代码原因占比~50%&lt;/li&gt;
+&lt;li&gt;一次构建可能掺杂着多个原因，如同时修改代码与Dockerfile，其中修改代码的需求是迫不及待的，单独修改代码的构建占所有包含修改代码的构建的~85%，而修改CI配置的构建往往放在与其他改动一起进行，独立修改占比极低。&lt;/li&gt;
+&lt;li&gt;用户往往会因为依赖库升级而空commit进行镜像rebuild，这样的情形占用时间约10%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;得到了这样的结论之后，我们会发现其实通过数据所获得的结论和猜想还是有较大差异的，虽然镜像打包占用时间较长，但是与其根据猜想直接优化镜像打包速度，远不如直接砍掉用户更新代码的提交次数对时间的影响更大。&lt;/p&gt;
+&lt;h1 id=&#34;解决方案&#34;&gt;解决方案&lt;/h1&gt;
+&lt;p&gt;有了数据支持的结论之后，接下来就是解决方案了，根据科学计算镜像的特点以及数据的支撑，我们可以得到一些高效的解决方案：&lt;/p&gt;
+&lt;h2 id=&#34;将loaderpy等镜像内代码与镜像分离可以直接减少50的打包时间&#34;&gt;将loader.py等镜像内代码与镜像分离，可以直接减少50%的打包时间**&lt;/h2&gt;
+&lt;p&gt;实际上，代码与环境分离并不复杂，使用一个通用的loader，在其中执行下载指定代码文件并执行就可以实现。这样会牺牲一些初始化代码文件的时间，但带来的镜像构建体验的提升是巨大的。在准备好一个成熟的环境之后，Debug代码不需要反复的构建镜像，直接修改代码并上传执行，容器内下载即可快速在容器平台上进行大规模调试。&lt;/p&gt;
+&lt;h2 id=&#34;合理将大型镜像分层&#34;&gt;合理将大型镜像分层&lt;/h2&gt;
+&lt;p&gt;这个思想其实在Dockerfile最佳实践中便可以找到，通过寻找Dockerfile中长期不变的环境依赖，将其汇总固化成基镜像，在基镜像上构建频繁变化的环境，就可以有效减少每次构建中重复构建的时间。&lt;/p&gt;
+&lt;h1 id=&#34;发散思维换个维度解决问题&#34;&gt;发散思维，换个维度解决问题&lt;/h1&gt;
+&lt;p&gt;以上都是基于计算机背景知识得出的解决方案，看上去行之有效且充满可行性，那么有没有更加好的方案呢？我们可以跳出计算机领域，从人的关系上来分析。&lt;/p&gt;
+&lt;p&gt;低效镜像之所以出现，是由于算法镜像是由非计算机背景的科学家构建的，如果我们从组织架构上尝试解决问题，直接对科学家们屏蔽容器这一概念，能不能更好的解决问题呢？&lt;/p&gt;
+&lt;p&gt;通过对之前爬取的数据进行进一步的清洗与整理，我们发现公司的镜像数量总数不多，较为可控，并且根据领域可以集中分类为几大理化原理的算法，镜像的迭代如果抛开代码变动，二进制版本与环境的迭代频率也非常低，平均每个镜像一个月变动一次左右。&lt;/p&gt;
+&lt;p&gt;那么如果我们接手原有的镜像进行分类合并与优化，向科学家们不断收集新的计算环境需求并以专业技术实现。便可以用较低的人力成本来解决镜像质量低下，效率低下带来的迭代测试缓慢问题与构建成本。提升了稳定性与专业性，同时减少了科学家的学习成本，他们只需要写好loader脚本提交到我们提供的环境中，即可大批量分布式执行，这无疑是一件双赢的方案。&lt;/p&gt;
+&lt;p&gt;软件工程无论在什么领域中，都是一个划分边界与分层治理的思路，这样的思路同样也可以应用在组织结构，人员分工中。科学家应该focus在算法实现与应用上，而Engineer则应该focus在系统效率，架构优化，成本控制，需求实现等方面。将镜像与科学家完全解耦之后，不仅减少了双方的学习成本与时间成本，Engineer还可以更好的迭代容器技术，想要推进或者换代新的容器平台，任务系统，支持MPI等种种迭代也不会再有镜像分散难以维护的阻力，这也恰恰是康威定律的有力体现。&lt;/p&gt;
+&lt;p&gt;有些时候问题的根源并不一定是技术问题，遇到一个怎么都不能优雅解决的问题，也许是组织架构限制了你的思路，重构技术架构时不妨多思考一下组织结构和人员分工是否出现了问题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;设计系统的架构受制于产生这些设计的组织的沟通结构。&amp;rdquo; ——M. Conway&lt;/strong&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>博客伊始</title>
+        <link>https://www.lunzi.space/post/blog_start/</link>
+        <pubDate>Wed, 06 Nov 2019 01:17:49 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/post/blog_start/</guid>
+        <description>&lt;p&gt;听说所有写博客的人都有四个阶段：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;折腾域名+云服务器&lt;/li&gt;
 &lt;li&gt;自制blog系统&lt;/li&gt;
 &lt;li&gt;折腾现有blog系统&lt;/li&gt;
 &lt;li&gt;回归内容，静态blog。&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;我也不例外，兜兜转转，还是屈服于较为昂贵的服务器费用与需要续费的不稳定性，博客嘛，归根结底还是内容至上的。&lt;/p&gt;
-
-&lt;p&gt;说起来这已经是第三版blog了，第一版自己写的前端，年少轻狂红袖添香。第二版使用了ghost博客系统，迫于羞耻没有继承原内容。然后开始用心的技术总结与输出，我也凭借着它得到了面试官的赏识，进入了一家心仪的公司。步入工作后的生活节奏的确与上学时有较大的不同，规律的作息与每日的工作让我在输出上怠惰了许久，直到自己的云服务器被回收，才想起这码事情。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+&lt;p&gt;说起来这已经是第三版blog了，第一版自己写的前端，年少轻狂红袖添香。第二版使用了ghost博客系统，迫于羞耻没有继承原内容。然后开始用心的技术总结与输出，我也凭借着它得到了面试官的赏识，进入了一家心仪的公司。步入工作后的生活节奏的确与上学时有较大的不同，规律的作息与每日的工作让我在输出上怠惰了许久，直到自己的云服务器被回收，才想起这码事情。&lt;/p&gt;
+&lt;p&gt;说来可惜，上一版的博客内容备份还是丢了，数万字的图文讲解就此消失，还是有些心痛的。上一版的第一篇文章也叫做博客伊始，讲述了对生活的愿景以及写作的态度，末尾祝我自己还能这般享受生活，两年过去我想我还算是做到了。&lt;/p&gt;
+&lt;p&gt;旧的不去，新的不来，作为处女座的我，经常会将用了不多的本子的前页通通撕掉，然后视为一个新的开始再重新来过。虽说现在有了些归档与怀念的意愿，但还是掩盖不了心里期许对于全新开始的那种无羁与洒脱感。生活是不自由的，但局部的自由与轻松也并不是那么难得。&lt;/p&gt;
+&lt;p&gt;入职，搬来深圳，生活方式趋于稳定，我本以为我已经不会拥有当年通宵coding与写作的快感，没想到偶尔的低谷期所带来的放纵般的熬夜，还会为我带来曾经的感觉，也许是还年轻，深夜仍然是我的第一生产力与灵感源泉。思如泉涌的感觉很棒，我还是在享受着的。&lt;/p&gt;
+&lt;p&gt;收入逐渐稳定，房贷不再是问题，存款与投资也在逐渐增长，一边融入社会担负责任，一边一个人努力的与消费主义与资本主义抗争着。一个人越是理智清醒，越是难以找到可以共同努力的人，奋斗的确不是什么难事，低谷时的孤独才难捱。越是见识阶级的广阔，越难以为自己的小成就而骄傲，越是接受自己的平凡，越是难以埋葬不久前身处鸡头的不凡心，成就感的阈值愈发提高。比起阶级差距，消费主义与丧文化，根深蒂固的成功主义与伴随着清晰规划的不满足，才是最令人痛苦的。&lt;/p&gt;
+&lt;p&gt;获得了许多也牺牲了许多，再也找不回竞技游戏的优越手感却还保留着胜利的渴望。疏离了自初中起的音游，疏离了自高中起的钢琴与贝斯，疏离了大学无限的好奇与创作欲望，告别了我的狗狗与新房子。曾经兴高采烈的筹划租房，想象新生活的欣喜与自给自足的愉悦，现在达到了目标却没有太多的波动。&lt;/p&gt;
+&lt;p&gt;仿佛跋涉进深夜的山林去找寻璀璨的星空，到达了山顶望着星河漫漫，惊叹了或许数分钟，不知言语，不知表情。&lt;/p&gt;
+&lt;p&gt;生活还是有趣的，国庆节发了年终奖，手头殷实的我租车出游了两天，沉浸在了驾驶的喜悦中。开始研究车型，四处试驾，逢周末便想租车然后趴在方向盘上，想跑赛道想跑山，一颗买车的心也开始蠢蠢欲动。&lt;/p&gt;
+&lt;p&gt;技术还是有趣的，工作于科研氛围的公司中，最不缺乏的就是探索方向。感兴趣于量子化学，独自开发分布式任务调度系统，甚至捧起编译原理开始思考如何优雅的实现结构化语言的解析器与检查器，thinking always make me happy。&lt;/p&gt;
+&lt;p&gt;到了2019的尾巴，我过得还算不错，还需要注意多静下心来阅读，抽时间健身，捡起or重建一些爱好。&lt;/p&gt;
+&lt;p&gt;祝我还能这般享受生活。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://www.lunzi.space/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.lunzi.space/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://www.lunzi.space/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.lunzi.space/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
