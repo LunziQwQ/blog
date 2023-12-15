@@ -76,13 +76,20 @@ menu:
         - identifier: "SomethingCool"
           name: "SomethingCool"
           url: "/something_cool"
-          weight: 97
+          weight: 96
           params:
               icon: "infinity"
 
         - identifier: "About"
           name: "About"
           url: "/about"
+          weight: 97
+          params:
+              icon: "user"
+    
+        - identifier: "Resume"
+          name: "Resume"
+          url: "/resume"
           weight: 98
           params:
               icon: "user"

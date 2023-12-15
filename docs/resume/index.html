@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='目标岗位：高级后端 / 技术管理
+当前情况：在岗 / 可一个月到岗
+技术栈：Python / Golang / 分布式云 / 科学计算/ 自动化装备
+期望薪资：&amp;gt;= 30k
+教育背景 本科：2015.9 ~ 2019.7
+电子科技大学中山学院：软件工程
+亮点 基础知识扎实，自学能力优秀：校内各科目成绩优异，连续三年获得奖学金。 竞赛成果：ACM算法竞赛校赛第二；全国大学生计算机博弈竞赛三等奖，二等奖。 在校创业：&amp;ldquo;爱培艺&amp;quot;教育平台，团队主程&#43;产品经理，负责原型设计，后端，前端以及部分安卓开发。 个人特点 五年工作经验：与公司共同成长，从小创业团队到五轮融资后交表上市；从开发小组到百人开发团队。 开发基础扎实：持续作为团队主力，从未脱离一线，多次参与核心项目封闭冲刺开发。 快速学习能力：多次跨领域经验，结合需求快速掌握要点并从设计到逻辑，创造价值 善于组织沟通：丰富的BA经验，技术管理经验 能力多元： AWS专业解决方案架构师认证（2019） 已发布四篇国内专利，一篇美国专利 后端开发之余，参与多次产品设计，拥有更高维度解决问题的视角与简单的全栈经验。 工作经历 晶泰科技 XtalPi：2018.11 ~ 至今 云计算平台开发（2018~2020）：Python / Golang
+分布式算法工程化，节点执行构建Workflow工具开发，混合云(&amp;gt;5家)能力接入并平台化
+BA需求分析师（2020）：作为开发团队与需求团队的沟通桥梁 解决需求增长与开发效率的冲突问题，通过团队敏捷转型提升开发效率，通过需求分析与高频沟通分辨出高价值需求最大化价值实现。
+TechLeader（2021~至今）：Python / Golang
+实验自动化中间层调度平台，解决跨越化学实验/计算机/硬件领域的复杂问题，提供领域抽象，架构设计，解决方案并落地开发。
+项目经历 自动化实验调度平台 该平台基于一组较为复杂的微服务，最下层对接设备控制系统，通过图数据库实现的资源树描述整个物质世界的状态，任务执行器通过世界状态将任务分解成硬件操作分配到具体硬件，调度系统通过调度算法实现任务打包与资源分配，物流方案；过程执行器将通过DSL描述的workflow分解为若干步骤并提交任务。
+非功能性设计同时包括：一个解决大型团队版本冲突与发布联调问题的基线管理方案与一键部署工具；一套使软件开发可以独立测试的面向硬件操作的仿真系统；一套将人工干预结合进自动化系统的委托服务等；
+项目成果：
+高度抽象了若干层复杂概念，可快速实现不同硬件的串联，最终承接了四个领域的不同实验场景的自动化实现 DSL作为行业标准对外推广与宣传 可以在20人日内完成新自动化流程的实现与软件侧集成测试 除特殊定制规则外，新流程可自动生成最高效率 / 最省资源的执行计划 高可见性：全系统链路追踪，仿真展示，数据集成 我的职责：
+参与整体架构设计，以及初版系统框架封闭冲刺开发 过程执行服务的全部设计与 &amp;gt;70%的开发 基线管理方案与一键部署工具的全部设计与&amp;gt;50%的开发 调度算法开发，PDDL规划器开发与接入 通用自动化实验 DSL 设计了一套标准，灵活，易于学习且硬件无关的化学过程描述语言规范，作为自动化实验平台的唯一入口输入。'>
+<title>Resume</title>
+
+<link rel='canonical' href='https://www.lunzi.space/resume/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='Resume'>
+<meta property='og:description' content='目标岗位：高级后端 / 技术管理
+当前情况：在岗 / 可一个月到岗
+技术栈：Python / Golang / 分布式云 / 科学计算/ 自动化装备
+期望薪资：&amp;gt;= 30k
+教育背景 本科：2015.9 ~ 2019.7
+电子科技大学中山学院：软件工程
+亮点 基础知识扎实，自学能力优秀：校内各科目成绩优异，连续三年获得奖学金。 竞赛成果：ACM算法竞赛校赛第二；全国大学生计算机博弈竞赛三等奖，二等奖。 在校创业：&amp;ldquo;爱培艺&amp;quot;教育平台，团队主程&#43;产品经理，负责原型设计，后端，前端以及部分安卓开发。 个人特点 五年工作经验：与公司共同成长，从小创业团队到五轮融资后交表上市；从开发小组到百人开发团队。 开发基础扎实：持续作为团队主力，从未脱离一线，多次参与核心项目封闭冲刺开发。 快速学习能力：多次跨领域经验，结合需求快速掌握要点并从设计到逻辑，创造价值 善于组织沟通：丰富的BA经验，技术管理经验 能力多元： AWS专业解决方案架构师认证（2019） 已发布四篇国内专利，一篇美国专利 后端开发之余，参与多次产品设计，拥有更高维度解决问题的视角与简单的全栈经验。 工作经历 晶泰科技 XtalPi：2018.11 ~ 至今 云计算平台开发（2018~2020）：Python / Golang
+分布式算法工程化，节点执行构建Workflow工具开发，混合云(&amp;gt;5家)能力接入并平台化
+BA需求分析师（2020）：作为开发团队与需求团队的沟通桥梁 解决需求增长与开发效率的冲突问题，通过团队敏捷转型提升开发效率，通过需求分析与高频沟通分辨出高价值需求最大化价值实现。
+TechLeader（2021~至今）：Python / Golang
+实验自动化中间层调度平台，解决跨越化学实验/计算机/硬件领域的复杂问题，提供领域抽象，架构设计，解决方案并落地开发。
+项目经历 自动化实验调度平台 该平台基于一组较为复杂的微服务，最下层对接设备控制系统，通过图数据库实现的资源树描述整个物质世界的状态，任务执行器通过世界状态将任务分解成硬件操作分配到具体硬件，调度系统通过调度算法实现任务打包与资源分配，物流方案；过程执行器将通过DSL描述的workflow分解为若干步骤并提交任务。
+非功能性设计同时包括：一个解决大型团队版本冲突与发布联调问题的基线管理方案与一键部署工具；一套使软件开发可以独立测试的面向硬件操作的仿真系统；一套将人工干预结合进自动化系统的委托服务等；
+项目成果：
+高度抽象了若干层复杂概念，可快速实现不同硬件的串联，最终承接了四个领域的不同实验场景的自动化实现 DSL作为行业标准对外推广与宣传 可以在20人日内完成新自动化流程的实现与软件侧集成测试 除特殊定制规则外，新流程可自动生成最高效率 / 最省资源的执行计划 高可见性：全系统链路追踪，仿真展示，数据集成 我的职责：
+参与整体架构设计，以及初版系统框架封闭冲刺开发 过程执行服务的全部设计与 &amp;gt;70%的开发 基线管理方案与一键部署工具的全部设计与&amp;gt;50%的开发 调度算法开发，PDDL规划器开发与接入 通用自动化实验 DSL 设计了一套标准，灵活，易于学习且硬件无关的化学过程描述语言规范，作为自动化实验平台的唯一入口输入。'>
+<meta property='og:url' content='https://www.lunzi.space/resume/'>
+<meta property='og:site_name' content='KylinJiang&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2023-12-15T14:50:00&#43;08:00'/><meta property='article:modified_time' content='2023-12-15T14:50:00&#43;08:00'/>
+<meta name="twitter:title" content="Resume">
+<meta name="twitter:description" content="目标岗位：高级后端 / 技术管理
+当前情况：在岗 / 可一个月到岗
+技术栈：Python / Golang / 分布式云 / 科学计算/ 自动化装备
+期望薪资：&amp;gt;= 30k
+教育背景 本科：2015.9 ~ 2019.7
+电子科技大学中山学院：软件工程
+亮点 基础知识扎实，自学能力优秀：校内各科目成绩优异，连续三年获得奖学金。 竞赛成果：ACM算法竞赛校赛第二；全国大学生计算机博弈竞赛三等奖，二等奖。 在校创业：&amp;ldquo;爱培艺&amp;quot;教育平台，团队主程&#43;产品经理，负责原型设计，后端，前端以及部分安卓开发。 个人特点 五年工作经验：与公司共同成长，从小创业团队到五轮融资后交表上市；从开发小组到百人开发团队。 开发基础扎实：持续作为团队主力，从未脱离一线，多次参与核心项目封闭冲刺开发。 快速学习能力：多次跨领域经验，结合需求快速掌握要点并从设计到逻辑，创造价值 善于组织沟通：丰富的BA经验，技术管理经验 能力多元： AWS专业解决方案架构师认证（2019） 已发布四篇国内专利，一篇美国专利 后端开发之余，参与多次产品设计，拥有更高维度解决问题的视角与简单的全栈经验。 工作经历 晶泰科技 XtalPi：2018.11 ~ 至今 云计算平台开发（2018~2020）：Python / Golang
+分布式算法工程化，节点执行构建Workflow工具开发，混合云(&amp;gt;5家)能力接入并平台化
+BA需求分析师（2020）：作为开发团队与需求团队的沟通桥梁 解决需求增长与开发效率的冲突问题，通过团队敏捷转型提升开发效率，通过需求分析与高频沟通分辨出高价值需求最大化价值实现。
+TechLeader（2021~至今）：Python / Golang
+实验自动化中间层调度平台，解决跨越化学实验/计算机/硬件领域的复杂问题，提供领域抽象，架构设计，解决方案并落地开发。
+项目经历 自动化实验调度平台 该平台基于一组较为复杂的微服务，最下层对接设备控制系统，通过图数据库实现的资源树描述整个物质世界的状态，任务执行器通过世界状态将任务分解成硬件操作分配到具体硬件，调度系统通过调度算法实现任务打包与资源分配，物流方案；过程执行器将通过DSL描述的workflow分解为若干步骤并提交任务。
+非功能性设计同时包括：一个解决大型团队版本冲突与发布联调问题的基线管理方案与一键部署工具；一套使软件开发可以独立测试的面向硬件操作的仿真系统；一套将人工干预结合进自动化系统的委托服务等；
+项目成果：
+高度抽象了若干层复杂概念，可快速实现不同硬件的串联，最终承接了四个领域的不同实验场景的自动化实现 DSL作为行业标准对外推广与宣传 可以在20人日内完成新自动化流程的实现与软件侧集成测试 除特殊定制规则外，新流程可自动生成最高效率 / 最省资源的执行计划 高可见性：全系统链路追踪，仿真展示，数据集成 我的职责：
+参与整体架构设计，以及初版系统框架封闭冲刺开发 过程执行服务的全部设计与 &amp;gt;70%的开发 基线管理方案与一键部署工具的全部设计与&amp;gt;50%的开发 调度算法开发，PDDL规划器开发与接入 通用自动化实验 DSL 设计了一套标准，灵活，易于学习且硬件无关的化学过程描述语言规范，作为自动化实验平台的唯一入口输入。">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/GanYu_huf9f4cd0571edcc94276aadb6bfc1c5f0_39313_300x0_resize_q75_box.jpeg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KylinJiang&#39;s Blog</a></h1>
+            <h2 class="site-description">This is what i live for</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/something_cool' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+                
+                <span>SomethingCool</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current' >
+            <a href='/resume' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/index.xml' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                
+                <span>RSS</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#教育背景">教育背景</a>
+      <ul>
+        <li><a href="#亮点">亮点</a></li>
+      </ul>
+    </li>
+    <li><a href="#个人特点">个人特点</a></li>
+    <li><a href="#工作经历">工作经历</a>
+      <ul>
+        <li><a href="#晶泰科技-xtalpi201811--至今">晶泰科技 XtalPi：2018.11 ~ 至今</a></li>
+      </ul>
+    </li>
+    <li><a href="#项目经历">项目经历</a>
+      <ul>
+        <li><a href="#自动化实验调度平台">自动化实验调度平台</a></li>
+        <li><a href="#通用自动化实验-dsl">通用自动化实验 DSL</a></li>
+        <li><a href="#混合云科学计算平台">混合云科学计算平台</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+            
+                <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2020">
+                        
+                            <span class="year">2020</span>
+                            <span class="count">3</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/archives/#2019">
+                        
+                            <span class="year">2019</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Categories</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/categories/%E6%9D%82%E8%B0%88/" class="font_size_3">
+                杂谈
+            </a>
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="font_size_1">
+                技术
+            </a>
+        
+    </div>
+</section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/%E5%BF%83%E6%83%85/" class="font_size_3">
+                心情
+            </a>
+        
+            <a href="/tags/docker/" class="font_size_1">
+                Docker
+            </a>
+        
+            <a href="/tags/mbti/" class="font_size_1">
+                MBTI
+            </a>
+        
+            <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="font_size_1">
+                年度总结
+            </a>
+        
+    </div>
+</section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/resume/">Resume</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 15, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><strong>目标岗位</strong>：高级后端 / 技术管理<br>
+<strong>当前情况</strong>：在岗 / 可一个月到岗<br>
+<strong>技术栈</strong>：Python / Golang / 分布式云 / 科学计算/ 自动化装备<br>
+<strong>期望薪资</strong>：&gt;= 30k</p>
+<h2 id="教育背景">教育背景</h2>
+<p>本科：2015.9 ~ 2019.7<br>
+电子科技大学中山学院：软件工程</p>
+<h3 id="亮点">亮点</h3>
+<ul>
+<li>基础知识扎实，自学能力优秀：校内各科目成绩优异，连续三年获得奖学金。</li>
+<li>竞赛成果：ACM算法竞赛校赛第二；全国大学生计算机博弈竞赛三等奖，二等奖。</li>
+<li>在校创业：&ldquo;爱培艺&quot;教育平台，团队主程+产品经理，负责原型设计，后端，前端以及部分安卓开发。</li>
+</ul>
+<h2 id="个人特点">个人特点</h2>
+<ul>
+<li><strong>五年工作经验</strong>：与公司共同成长，从小创业团队到五轮融资后交表上市；从开发小组到百人开发团队。</li>
+<li><strong>开发基础扎实</strong>：持续作为团队主力，从未脱离一线，多次参与核心项目封闭冲刺开发。</li>
+<li><strong>快速学习能力</strong>：多次跨领域经验，结合需求快速掌握要点并从设计到逻辑，创造价值</li>
+<li><strong>善于组织沟通</strong>：丰富的BA经验，技术管理经验</li>
+<li><strong>能力多元</strong>：
+<ul>
+<li>AWS专业解决方案架构师认证（2019）</li>
+<li>已发布四篇国内专利，一篇美国专利</li>
+<li>后端开发之余，参与多次产品设计，拥有更高维度解决问题的视角与简单的全栈经验。</li>
+</ul>
+</li>
+</ul>
+<h2 id="工作经历">工作经历</h2>
+<h3 id="晶泰科技-xtalpi201811--至今">晶泰科技 XtalPi：2018.11 ~ 至今</h3>
+<ul>
+<li>
+<p><strong>云计算平台开发（2018~2020）</strong>：Python / Golang<br>
+分布式算法工程化，节点执行构建Workflow工具开发，混合云(&gt;5家)能力接入并平台化</p>
+</li>
+<li>
+<p><strong>BA需求分析师（2020）</strong>：作为开发团队与需求团队的沟通桥梁 <br>
+解决需求增长与开发效率的冲突问题，通过团队敏捷转型提升开发效率，通过需求分析与高频沟通分辨出高价值需求最大化价值实现。</p>
+</li>
+<li>
+<p><strong>TechLeader（2021~至今）</strong>：Python / Golang<br>
+实验自动化中间层调度平台，解决跨越化学实验/计算机/硬件领域的复杂问题，提供领域抽象，架构设计，解决方案并落地开发。</p>
+</li>
+</ul>
+<h2 id="项目经历">项目经历</h2>
+<h3 id="自动化实验调度平台">自动化实验调度平台</h3>
+<p>该平台基于一组较为复杂的微服务，最下层对接设备控制系统，通过图数据库实现的资源树描述整个物质世界的状态，任务执行器通过世界状态将任务分解成硬件操作分配到具体硬件，调度系统通过调度算法实现任务打包与资源分配，物流方案；过程执行器将通过DSL描述的workflow分解为若干步骤并提交任务。<br>
+非功能性设计同时包括：一个解决大型团队版本冲突与发布联调问题的基线管理方案与一键部署工具；一套使软件开发可以独立测试的面向硬件操作的仿真系统；一套将人工干预结合进自动化系统的委托服务等；</p>
+<p>项目成果：</p>
+<ul>
+<li>高度抽象了若干层复杂概念，可快速实现不同硬件的串联，最终承接了四个领域的不同实验场景的自动化实现</li>
+<li>DSL作为行业标准对外推广与宣传</li>
+<li>可以在20人日内完成新自动化流程的实现与软件侧集成测试</li>
+<li>除特殊定制规则外，新流程可自动生成最高效率 / 最省资源的执行计划</li>
+<li>高可见性：全系统链路追踪，仿真展示，数据集成</li>
+</ul>
+<p>我的职责：</p>
+<ul>
+<li>参与整体架构设计，以及初版系统框架封闭冲刺开发</li>
+<li>过程执行服务的全部设计与 &gt;70%的开发</li>
+<li>基线管理方案与一键部署工具的全部设计与&gt;50%的开发</li>
+<li>调度算法开发，PDDL规划器开发与接入</li>
+</ul>
+<h3 id="通用自动化实验-dsl">通用自动化实验 DSL</h3>
+<p>设计了一套标准，灵活，易于学习且硬件无关的化学过程描述语言规范，作为自动化实验平台的唯一入口输入。<br>
+该规范遵循YAML语法，抽象了实验步骤类型，环境控制，流程控制，追加检测，物理量与物质对象的表达，并支持变量引用。<br>
+配套工具包含面向下层的解析器，检查器。以及面向上层的编写工具，可视化拖转生成工具，化学设计软件数据到该DSL的转换工具等。</p>
+<p>项目成果：</p>
+<ul>
+<li>大幅降低自动化实验使用门槛，普通化学家借助校验工具可以快速上手提交自动化实验</li>
+<li>完美达成设计目标，并向上延伸出更多行业的适配方案。再次作为定制化产品的中间层，延伸出两套不同的自动化实验入口产品。</li>
+<li>产出两篇相关专利并发布</li>
+</ul>
+<p>我的职责：</p>
+<ul>
+<li>深入理解化学实验场景，抽象设计出人类/计算机均可理解的数据模型</li>
+<li>负责项目全部的需求沟通，设计，实现，落地</li>
+<li>负责&gt;90%的开发内容</li>
+</ul>
+<h3 id="混合云科学计算平台">混合云科学计算平台</h3>
+<p>该项目分为两大部分：</p>
+<ul>
+<li>混合云平台：对接多云厂商，封装云计算平台，对内部提供存储与计算资源的调用入口
+<ul>
+<li>上层提供Job管理服务，存储管理服务作为顶层入口</li>
+<li>使用各个云厂商提供的<code>伸缩组/k8s</code>作为基础计算资源，对外提供虚拟集群与虚拟队列的概念。每个<code>伸缩组/k8s</code>内通过服务从Job服务拉取符合条件的任务执行，并汇报状态</li>
+<li>虚拟集群资源分配：通过竞价监控，竞价策略结合Job数量与优先级，购买/释放<code>伸缩组/k8s资源</code>并记录账单</li>
+<li>计算节点内SDK提供监控埋点与数据，内部状态上报</li>
+</ul>
+</li>
+<li>Workflow引擎：提供科学计算节点的标准定义与工程化工具，依赖云存储提供无服务的网格化计算引擎
+<ul>
+<li>计算Workflow DSL与配套工具：用户可以自由定义计算节点，组合节点为Workflow，并发布(Docker)。</li>
+<li>计算节点SDK：通过SDK调用<code>存储管理服务</code>持久化计算上下文与计算状态。解析DSL确定计算路径并自动提交Workflow下一步的Job。</li>
+<li>服务入口（HTTP/SDK）：Workflow提交与管理，状态查询，计算结果汇总，账单统计等。</li>
+</ul>
+</li>
+</ul>
+<p>项目成果：</p>
+<ul>
+<li>平台完成一年内公司内95%+的计算负载全部迁移至该引擎，海量负载下进行过两次大型性能优化，维护沿用至今</li>
+<li>产出三篇相关专利并发布，其中一篇同时发布美国专利。</li>
+</ul>
+<p>我的职责：</p>
+<ul>
+<li>负责存储平台的全部设计与实现：</li>
+<li>负责监控系统的部分实现：事件采集与分发</li>
+<li>负责Workflow引擎的全部设计与约80%的开发实现</li>
+<li>DSL设计与配套工具实现，设计镜像规范，模板，负责全部公司计算业务的迁移</li>
+<li>用户问题解答，平台Debug与计算任务维护/新计算任务开发</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Copyright © 2019 KylinJiang. All Rights Reserve
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

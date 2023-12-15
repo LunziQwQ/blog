@@ -7,7 +7,125 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Copyright © 2019 KylinJiang. All Rights Reserve</copyright>
-        <lastBuildDate>Tue, 31 Aug 2021 06:00:00 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Dec 2023 14:50:00 +0800</lastBuildDate><atom:link href="https://www.lunzi.space/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Resume</title>
+        <link>https://www.lunzi.space/resume/</link>
+        <pubDate>Fri, 15 Dec 2023 14:50:00 +0800</pubDate>
+        
+        <guid>https://www.lunzi.space/resume/</guid>
+        <description>&lt;p&gt;&lt;strong&gt;目标岗位&lt;/strong&gt;：高级后端 / 技术管理&lt;br&gt;
+&lt;strong&gt;当前情况&lt;/strong&gt;：在岗 / 可一个月到岗&lt;br&gt;
+&lt;strong&gt;技术栈&lt;/strong&gt;：Python / Golang / 分布式云 / 科学计算/ 自动化装备&lt;br&gt;
+&lt;strong&gt;期望薪资&lt;/strong&gt;：&amp;gt;= 30k&lt;/p&gt;
+&lt;h2 id=&#34;教育背景&#34;&gt;教育背景&lt;/h2&gt;
+&lt;p&gt;本科：2015.9 ~ 2019.7&lt;br&gt;
+电子科技大学中山学院：软件工程&lt;/p&gt;
+&lt;h3 id=&#34;亮点&#34;&gt;亮点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;基础知识扎实，自学能力优秀：校内各科目成绩优异，连续三年获得奖学金。&lt;/li&gt;
+&lt;li&gt;竞赛成果：ACM算法竞赛校赛第二；全国大学生计算机博弈竞赛三等奖，二等奖。&lt;/li&gt;
+&lt;li&gt;在校创业：&amp;ldquo;爱培艺&amp;quot;教育平台，团队主程+产品经理，负责原型设计，后端，前端以及部分安卓开发。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;个人特点&#34;&gt;个人特点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;五年工作经验&lt;/strong&gt;：与公司共同成长，从小创业团队到五轮融资后交表上市；从开发小组到百人开发团队。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开发基础扎实&lt;/strong&gt;：持续作为团队主力，从未脱离一线，多次参与核心项目封闭冲刺开发。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速学习能力&lt;/strong&gt;：多次跨领域经验，结合需求快速掌握要点并从设计到逻辑，创造价值&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;善于组织沟通&lt;/strong&gt;：丰富的BA经验，技术管理经验&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;能力多元&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;AWS专业解决方案架构师认证（2019）&lt;/li&gt;
+&lt;li&gt;已发布四篇国内专利，一篇美国专利&lt;/li&gt;
+&lt;li&gt;后端开发之余，参与多次产品设计，拥有更高维度解决问题的视角与简单的全栈经验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;工作经历&#34;&gt;工作经历&lt;/h2&gt;
+&lt;h3 id=&#34;晶泰科技-xtalpi201811--至今&#34;&gt;晶泰科技 XtalPi：2018.11 ~ 至今&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;云计算平台开发（2018~2020）&lt;/strong&gt;：Python / Golang&lt;br&gt;
+分布式算法工程化，节点执行构建Workflow工具开发，混合云(&amp;gt;5家)能力接入并平台化&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;BA需求分析师（2020）&lt;/strong&gt;：作为开发团队与需求团队的沟通桥梁 &lt;br&gt;
+解决需求增长与开发效率的冲突问题，通过团队敏捷转型提升开发效率，通过需求分析与高频沟通分辨出高价值需求最大化价值实现。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TechLeader（2021~至今）&lt;/strong&gt;：Python / Golang&lt;br&gt;
+实验自动化中间层调度平台，解决跨越化学实验/计算机/硬件领域的复杂问题，提供领域抽象，架构设计，解决方案并落地开发。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;项目经历&#34;&gt;项目经历&lt;/h2&gt;
+&lt;h3 id=&#34;自动化实验调度平台&#34;&gt;自动化实验调度平台&lt;/h3&gt;
+&lt;p&gt;该平台基于一组较为复杂的微服务，最下层对接设备控制系统，通过图数据库实现的资源树描述整个物质世界的状态，任务执行器通过世界状态将任务分解成硬件操作分配到具体硬件，调度系统通过调度算法实现任务打包与资源分配，物流方案；过程执行器将通过DSL描述的workflow分解为若干步骤并提交任务。&lt;br&gt;
+非功能性设计同时包括：一个解决大型团队版本冲突与发布联调问题的基线管理方案与一键部署工具；一套使软件开发可以独立测试的面向硬件操作的仿真系统；一套将人工干预结合进自动化系统的委托服务等；&lt;/p&gt;
+&lt;p&gt;项目成果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高度抽象了若干层复杂概念，可快速实现不同硬件的串联，最终承接了四个领域的不同实验场景的自动化实现&lt;/li&gt;
+&lt;li&gt;DSL作为行业标准对外推广与宣传&lt;/li&gt;
+&lt;li&gt;可以在20人日内完成新自动化流程的实现与软件侧集成测试&lt;/li&gt;
+&lt;li&gt;除特殊定制规则外，新流程可自动生成最高效率 / 最省资源的执行计划&lt;/li&gt;
+&lt;li&gt;高可见性：全系统链路追踪，仿真展示，数据集成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的职责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参与整体架构设计，以及初版系统框架封闭冲刺开发&lt;/li&gt;
+&lt;li&gt;过程执行服务的全部设计与 &amp;gt;70%的开发&lt;/li&gt;
+&lt;li&gt;基线管理方案与一键部署工具的全部设计与&amp;gt;50%的开发&lt;/li&gt;
+&lt;li&gt;调度算法开发，PDDL规划器开发与接入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;通用自动化实验-dsl&#34;&gt;通用自动化实验 DSL&lt;/h3&gt;
+&lt;p&gt;设计了一套标准，灵活，易于学习且硬件无关的化学过程描述语言规范，作为自动化实验平台的唯一入口输入。&lt;br&gt;
+该规范遵循YAML语法，抽象了实验步骤类型，环境控制，流程控制，追加检测，物理量与物质对象的表达，并支持变量引用。&lt;br&gt;
+配套工具包含面向下层的解析器，检查器。以及面向上层的编写工具，可视化拖转生成工具，化学设计软件数据到该DSL的转换工具等。&lt;/p&gt;
+&lt;p&gt;项目成果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大幅降低自动化实验使用门槛，普通化学家借助校验工具可以快速上手提交自动化实验&lt;/li&gt;
+&lt;li&gt;完美达成设计目标，并向上延伸出更多行业的适配方案。再次作为定制化产品的中间层，延伸出两套不同的自动化实验入口产品。&lt;/li&gt;
+&lt;li&gt;产出两篇相关专利并发布&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的职责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;深入理解化学实验场景，抽象设计出人类/计算机均可理解的数据模型&lt;/li&gt;
+&lt;li&gt;负责项目全部的需求沟通，设计，实现，落地&lt;/li&gt;
+&lt;li&gt;负责&amp;gt;90%的开发内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;混合云科学计算平台&#34;&gt;混合云科学计算平台&lt;/h3&gt;
+&lt;p&gt;该项目分为两大部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;混合云平台：对接多云厂商，封装云计算平台，对内部提供存储与计算资源的调用入口
+&lt;ul&gt;
+&lt;li&gt;上层提供Job管理服务，存储管理服务作为顶层入口&lt;/li&gt;
+&lt;li&gt;使用各个云厂商提供的&lt;code&gt;伸缩组/k8s&lt;/code&gt;作为基础计算资源，对外提供虚拟集群与虚拟队列的概念。每个&lt;code&gt;伸缩组/k8s&lt;/code&gt;内通过服务从Job服务拉取符合条件的任务执行，并汇报状态&lt;/li&gt;
+&lt;li&gt;虚拟集群资源分配：通过竞价监控，竞价策略结合Job数量与优先级，购买/释放&lt;code&gt;伸缩组/k8s资源&lt;/code&gt;并记录账单&lt;/li&gt;
+&lt;li&gt;计算节点内SDK提供监控埋点与数据，内部状态上报&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Workflow引擎：提供科学计算节点的标准定义与工程化工具，依赖云存储提供无服务的网格化计算引擎
+&lt;ul&gt;
+&lt;li&gt;计算Workflow DSL与配套工具：用户可以自由定义计算节点，组合节点为Workflow，并发布(Docker)。&lt;/li&gt;
+&lt;li&gt;计算节点SDK：通过SDK调用&lt;code&gt;存储管理服务&lt;/code&gt;持久化计算上下文与计算状态。解析DSL确定计算路径并自动提交Workflow下一步的Job。&lt;/li&gt;
+&lt;li&gt;服务入口（HTTP/SDK）：Workflow提交与管理，状态查询，计算结果汇总，账单统计等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;项目成果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;平台完成一年内公司内95%+的计算负载全部迁移至该引擎，海量负载下进行过两次大型性能优化，维护沿用至今&lt;/li&gt;
+&lt;li&gt;产出三篇相关专利并发布，其中一篇同时发布美国专利。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的职责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;负责存储平台的全部设计与实现：&lt;/li&gt;
+&lt;li&gt;负责监控系统的部分实现：事件采集与分发&lt;/li&gt;
+&lt;li&gt;负责Workflow引擎的全部设计与约80%的开发实现&lt;/li&gt;
+&lt;li&gt;DSL设计与配套工具实现，设计镜像规范，模板，负责全部公司计算业务的迁移&lt;/li&gt;
+&lt;li&gt;用户问题解答，平台Debug与计算任务维护/新计算任务开发&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>About Me</title>
         <link>https://www.lunzi.space/about/</link>
         <pubDate>Tue, 31 Aug 2021 06:00:00 +0800</pubDate>
